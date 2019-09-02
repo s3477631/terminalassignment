@@ -1,5 +1,7 @@
+
+
 class Userprofile
-    attr_reader :name, :weight, :height, :dob, :createdat
+    attr_accessor :name, :weight, :height, :dob, :createdat
         
     def initialize(name, weight, height, dob, createdat)
     @name = name 
@@ -8,7 +10,12 @@ class Userprofile
     @dob = dob 
     @createdat = createdat
     end
-    def profileName
+    def addprofile 
+        Dir.mkdir("#{name}")
+    end
+    def viewProfile
         return  puts "#{name}"
+    end
+    def removeProfile
     end
 end

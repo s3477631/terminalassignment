@@ -1,4 +1,4 @@
-
+require_relative "./modules/addprofile"
 
 class Userprofile
     attr_accessor :name, :weight, :height, :dob, :createdat
@@ -10,9 +10,7 @@ class Userprofile
     @dob = dob 
     @createdat = createdat
     end
-    def addprofile 
-        Dir.mkdir("#{name}")
-    end
+    include Addprofile 
     def viewProfile
         return  puts "#{name}"
     end

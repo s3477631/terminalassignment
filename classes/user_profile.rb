@@ -1,8 +1,8 @@
-require_relative "./modules/addprofile"
+require_relative "../modules/addprofile"
+require_relative "../modules/viewprofile"
 
 class Userprofile
-    attr_accessor :name, :weight, :height, :dob, :createdat
-        
+    attr_accessor :name, :weight, :height, :dob, :createdat    
     def initialize(name, weight, height, dob, createdat)
     @name = name 
     @weight = weight 
@@ -11,9 +11,5 @@ class Userprofile
     @createdat = createdat
     end
     include Addprofile 
-    def viewProfile
-        return  puts "#{name}"
-    end
-    def removeProfile
-    end
+    include Viewprofile
 end

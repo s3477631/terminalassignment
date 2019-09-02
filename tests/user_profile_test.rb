@@ -1,5 +1,5 @@
 require 'test/unit'
-require_relative 'user_profile'
+require_relative '../classes/user_profile'
 
 
 class UserProfile < Test::Unit::TestCase

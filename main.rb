@@ -19,16 +19,13 @@ if nameinput == ''
     test = Userprofile.new(name, weight, height, dob)
     test.addprofile
 else 
-    puts "Would you like to update your details today?"
-    @name = nameinput
-    puts "What weight did you record today?"   
-    @weight = weight.to_f 
-    @height = height.to_f
+    
+    @name = nameinput  
+    puts "Please enter the weight you recorded today" 
+    @weight = gets.chomp.to_f 
+    @height = height
     @dob = dob
-    tester = Userprofile.new(name, weight, height, dob)
-
-    tester.addprofile
-    tester.viewprofile
+    test2 = Userprofile.new(name, weight, height, dob)
     
     
 end

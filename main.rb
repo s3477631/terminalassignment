@@ -1,4 +1,5 @@
 require_relative "./classes/user_profile"
+
 require 'fileutils'
 
 
@@ -15,10 +16,21 @@ if nameinput == ''
     height = gets.chomp.to_f
     puts "Please enter date of birth"
     dob = gets.chomp
-test = Userprofile.new(name, weight, height, dob)
-test.addprofile
+    test = Userprofile.new(name, weight, height, dob)
+    test.addprofile
 else 
-    test.viewprofile
+    puts "Would you like to update your details today?"
+    @name = nameinput
+    puts "What weight did you record today?"   
+    @weight = weight.to_f 
+    @height = height.to_f
+    @dob = dob
+    tester = Userprofile.new(name, weight, height, dob)
+
+    tester.addprofile
+    tester.viewprofile
+    
+    
 end
 
 

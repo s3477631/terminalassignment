@@ -1,6 +1,7 @@
 require_relative "../modules/addprofile"
 require_relative "../modules/viewprofile"
 require_relative "../modules/openprofile"
+require_relative "../modules/updateprofile"
 
 
 class Userprofile
@@ -15,5 +16,6 @@ class Userprofile
     end
     include Addprofile 
     include Viewprofile
+    include Updateprofile
 end
 

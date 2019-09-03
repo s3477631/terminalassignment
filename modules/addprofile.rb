@@ -2,11 +2,13 @@ require 'fileutils'
 require 'date'
 
 module Addprofile
-def addprofile 
+def addprofile
+
     FileUtils.mkdir_p "USER_PROFILES/#{name}"
     FileUtils.cd "USER_PROFILES/#{name}"
-    FileUtils.touch "#{Date.today}.txt"
-    File.open "#{Date.today}.txt", "w"
-    File.write("#{Date.today}.txt", "#{weight}, #{height}, #{dob}, #{bmidata}")
+    recordedday = (`ls -1 #{name} | wc -l`.to_i) + 1
+    FileUtils.touch "#{recordedday}.txt"
+    File.open "#{recordedday}.txt", "w"
+    File.write("#{recordedday}.txt", "#{weight}, #{height}, #{dob}, #{bmidata}")
 end
 end

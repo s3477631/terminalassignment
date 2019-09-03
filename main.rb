@@ -1,8 +1,26 @@
 require_relative "./classes/user_profile"
-require_relative "./classes/bmi_calculator"
+require 'fileutils'
 
 
-test = Userprofile.new("John", 80, 1.88, "17/03/1932")
+puts "Hey to sign in enter your name and press enter, otherise just press enter"
+
+nameinput = gets.chomp
+
+if nameinput == ''
+    puts "Please enter name to register profile: "
+    name = gets.chomp
+    puts "Please enter weight in kilograms" 
+    weight = gets.chomp.to_f
+    puts "Please enter height in metres squared i.e: 1.70"
+    height = gets.chomp.to_f
+    puts "Please enter date of birth"
+    dob = gets.chomp
+test = Userprofile.new(name, weight, height, dob)
 test.addprofile
-test.updateprofile
-test.viewprofile
+else 
+    test.viewprofile
+end
+
+
+
+

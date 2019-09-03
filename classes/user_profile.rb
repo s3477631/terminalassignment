@@ -1,18 +1,18 @@
 require_relative "../modules/addprofile"
 require_relative "../modules/viewprofile"
-require_relative "../modules/updateprofile"
+require_relative "../modules/openprofile"
+
 
 class Userprofile
-    attr_accessor :name, :weight, :height, :dob, :bmidata
+    attr_accessor :name, :weight, :height, :dob, :bmidata, :recordday
     def initialize(name, weight, height, dob)
-    @name = name 
+    @name = name  
     @weight = weight 
     @height = height
     @dob = dob
-    bmidata = lambda { weight/(height*height) }
+    bmidata = lambda { (weight/(height*height)).round(2) }
     @bmidata = bmidata.call
     end
-    include Updateprofile
     include Addprofile 
     include Viewprofile
 end

@@ -1,0 +1,24 @@
+I, [2019-09-04T13:46:13.860215 #11710]  INFO -- : Field demo viewcontroller.rb started on 2019-09-04
+D, [2019-09-04T13:46:13.860801 #11710] DEBUG -- :   on_enter: setting original_value to 
+D, [2019-09-04T13:46:13.860851 #11710] DEBUG -- :  form repaint:,  , r 3 c 25 
+D, [2019-09-04T13:46:13.860880 #11710] DEBUG -- : label repaint 0 0 Setup Userprofile 
+D, [2019-09-04T13:46:13.860957 #11710] DEBUG -- : label repaint 3 5 Name: 
+D, [2019-09-04T13:46:13.861009 #11710] DEBUG -- : label repaint 7 5 Weight(kg): 
+D, [2019-09-04T13:46:13.861057 #11710] DEBUG -- : label repaint 11 5 Height(cm): 
+D, [2019-09-04T13:46:13.861103 #11710] DEBUG -- : label repaint 15 5 Dob(dd/mm/yy): 
+D, [2019-09-04T13:46:13.861187 #11710] DEBUG -- : repaint FIELD: name, r:3 c:25,wid:35,maxlen: 35,pcol:0,  true st: HIGHLIGHTED 
+D, [2019-09-04T13:46:13.861245 #11710] DEBUG -- : repaint FIELD: weight(kg), r:7 c:25,wid:35,maxlen: 3,pcol:0,  true st: NORMAL 
+D, [2019-09-04T13:46:13.861284 #11710] DEBUG -- : repaint FIELD: height(m), r:11 c:25,wid:35,maxlen: 4,pcol:0,  true st: NORMAL 
+D, [2019-09-04T13:46:13.861322 #11710] DEBUG -- : repaint FIELD: d.o.b, r:15 c:25,wid:35,maxlen: 35,pcol:0,  true st: NORMAL 
+D, [2019-09-04T13:46:21.805518 #11710] DEBUG -- : inside handle key of field with 102
+D, [2019-09-04T13:46:21.805755 #11710] DEBUG -- : inside def fire_handler evt:CHANGE, o: Umbra::InputDataEvent
+D, [2019-09-04T13:46:21.805842 #11710] DEBUG -- : handled inside Form 102 from #<Umbra::Field:0x00007fc4da9173b8> got 0  
+D, [2019-09-04T13:46:21.805937 #11710] DEBUG -- :  form before repaint  , , ret 
+D, [2019-09-04T13:46:21.805992 #11710] DEBUG -- :  form repaint:,  , r 3 c 25 
+D, [2019-09-04T13:46:21.806061 #11710] DEBUG -- : repaint FIELD: name, r:3 c:25,wid:35,maxlen: 35,pcol:0,  true st: HIGHLIGHTED 
+D, [2019-09-04T13:46:23.002649 #11710] DEBUG -- : inside handle key of field with 100
+D, [2019-09-04T13:46:23.002865 #11710] DEBUG -- : inside def fire_handler evt:CHANGE, o: Umbra::InputDataEvent
+D, [2019-09-04T13:46:23.002962 #11710] DEBUG -- : handled inside Form 100 from #<Umbra::Field:0x00007fc4da9173b8> got 0  
+D, [2019-09-04T13:46:23.003033 #11710] DEBUG -- :  form before repaint  , , ret 
+D, [2019-09-04T13:46:23.003097 #11710] DEBUG -- :  form repaint:,  , r 3 c 26 
+D, [2019-09-04T13:46:23.003184 #11710] DEBUG -- : repaint FIELD: name, r:3 c:25,wid:35,maxlen: 35,pcol:0,  true st: HIGHLIGHTED 

@@ -1,0 +1,15 @@
+I, [2019-09-04T13:15:12.476940 #10557]  INFO -- : Field demo screenclass.rb started on 2019-09-04
+D, [2019-09-04T13:15:12.477369 #10557] DEBUG -- :   on_enter: setting original_value to 
+D, [2019-09-04T13:15:12.477406 #10557] DEBUG -- :  form repaint:,  , r 3 c 25 
+D, [2019-09-04T13:15:12.477426 #10557] DEBUG -- : label repaint 0 0 Setup Userprofile 
+D, [2019-09-04T13:15:12.477499 #10557] DEBUG -- : label repaint 3 5 Name: 
+D, [2019-09-04T13:15:12.477535 #10557] DEBUG -- : label repaint 7 5 Weight(kg): 
+D, [2019-09-04T13:15:12.477567 #10557] DEBUG -- : label repaint 11 5 Height(cm): 
+D, [2019-09-04T13:15:12.477599 #10557] DEBUG -- : label repaint 15 5 Dob(dd/mm/yy): 
+D, [2019-09-04T13:15:12.477636 #10557] DEBUG -- : repaint FIELD: name, r:3 c:25,wid:35,maxlen: 35,pcol:0,  true st: HIGHLIGHTED 
+D, [2019-09-04T13:15:12.477688 #10557] DEBUG -- : repaint FIELD: weight(kg), r:7 c:25,wid:35,maxlen: 3,pcol:0,  true st: NORMAL 
+D, [2019-09-04T13:15:12.477732 #10557] DEBUG -- : repaint FIELD: height(m), r:11 c:25,wid:35,maxlen: 4,pcol:0,  true st: NORMAL 
+D, [2019-09-04T13:15:12.477762 #10557] DEBUG -- : repaint FIELD: d.o.b, r:15 c:25,wid:35,maxlen: 35,pcol:0,  true st: NORMAL 
+D, [2019-09-04T13:15:13.814962 #10557] DEBUG -- : inside handle key of field with 10
+D, [2019-09-04T13:15:13.815154 #10557] DEBUG -- : handled inside Form 10 from #<Umbra::Field:0x00007fd64e184c38> got UNHANDLED  
+D, [2019-09-04T13:15:13.815238 #10557] DEBUG -- : FORM process_key 10 got ret UNHANDLED in , flushing input 

@@ -7,6 +7,7 @@ nameinput = gets.chomp
 
 if File.directory?("./USER_PROFILES/#{nameinput}")
     puts "Welcome Back!"
+    #load latest profile 
 else 
     puts "would you like to sign up?"
 

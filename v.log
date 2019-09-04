@@ -1,24 +1,38 @@
-I, [2019-09-04T13:46:13.860215 #11710]  INFO -- : Field demo viewcontroller.rb started on 2019-09-04
-D, [2019-09-04T13:46:13.860801 #11710] DEBUG -- :   on_enter: setting original_value to 
-D, [2019-09-04T13:46:13.860851 #11710] DEBUG -- :  form repaint:,  , r 3 c 25 
-D, [2019-09-04T13:46:13.860880 #11710] DEBUG -- : label repaint 0 0 Setup Userprofile 
-D, [2019-09-04T13:46:13.860957 #11710] DEBUG -- : label repaint 3 5 Name: 
-D, [2019-09-04T13:46:13.861009 #11710] DEBUG -- : label repaint 7 5 Weight(kg): 
-D, [2019-09-04T13:46:13.861057 #11710] DEBUG -- : label repaint 11 5 Height(cm): 
-D, [2019-09-04T13:46:13.861103 #11710] DEBUG -- : label repaint 15 5 Dob(dd/mm/yy): 
-D, [2019-09-04T13:46:13.861187 #11710] DEBUG -- : repaint FIELD: name, r:3 c:25,wid:35,maxlen: 35,pcol:0,  true st: HIGHLIGHTED 
-D, [2019-09-04T13:46:13.861245 #11710] DEBUG -- : repaint FIELD: weight(kg), r:7 c:25,wid:35,maxlen: 3,pcol:0,  true st: NORMAL 
-D, [2019-09-04T13:46:13.861284 #11710] DEBUG -- : repaint FIELD: height(m), r:11 c:25,wid:35,maxlen: 4,pcol:0,  true st: NORMAL 
-D, [2019-09-04T13:46:13.861322 #11710] DEBUG -- : repaint FIELD: d.o.b, r:15 c:25,wid:35,maxlen: 35,pcol:0,  true st: NORMAL 
-D, [2019-09-04T13:46:21.805518 #11710] DEBUG -- : inside handle key of field with 102
-D, [2019-09-04T13:46:21.805755 #11710] DEBUG -- : inside def fire_handler evt:CHANGE, o: Umbra::InputDataEvent
-D, [2019-09-04T13:46:21.805842 #11710] DEBUG -- : handled inside Form 102 from #<Umbra::Field:0x00007fc4da9173b8> got 0  
-D, [2019-09-04T13:46:21.805937 #11710] DEBUG -- :  form before repaint  , , ret 
-D, [2019-09-04T13:46:21.805992 #11710] DEBUG -- :  form repaint:,  , r 3 c 25 
-D, [2019-09-04T13:46:21.806061 #11710] DEBUG -- : repaint FIELD: name, r:3 c:25,wid:35,maxlen: 35,pcol:0,  true st: HIGHLIGHTED 
-D, [2019-09-04T13:46:23.002649 #11710] DEBUG -- : inside handle key of field with 100
-D, [2019-09-04T13:46:23.002865 #11710] DEBUG -- : inside def fire_handler evt:CHANGE, o: Umbra::InputDataEvent
-D, [2019-09-04T13:46:23.002962 #11710] DEBUG -- : handled inside Form 100 from #<Umbra::Field:0x00007fc4da9173b8> got 0  
-D, [2019-09-04T13:46:23.003033 #11710] DEBUG -- :  form before repaint  , , ret 
-D, [2019-09-04T13:46:23.003097 #11710] DEBUG -- :  form repaint:,  , r 3 c 26 
-D, [2019-09-04T13:46:23.003184 #11710] DEBUG -- : repaint FIELD: name, r:3 c:25,wid:35,maxlen: 35,pcol:0,  true st: HIGHLIGHTED 
+I, [2019-09-04T14:07:51.283077 #11965]  INFO -- : Field demo viewcontroller.rb started on 2019-09-04
+D, [2019-09-04T14:07:51.283569 #11965] DEBUG -- :   on_enter: setting original_value to 
+D, [2019-09-04T14:07:51.283630 #11965] DEBUG -- :  form repaint:,  , r 3 c 25 
+D, [2019-09-04T14:07:51.283654 #11965] DEBUG -- : label repaint 0 0 Setup Userprofile 
+D, [2019-09-04T14:07:51.283738 #11965] DEBUG -- : label repaint 3 5 Name: 
+D, [2019-09-04T14:07:51.283786 #11965] DEBUG -- : label repaint 7 5 Weight(kg): 
+D, [2019-09-04T14:07:51.283825 #11965] DEBUG -- : label repaint 11 5 Height(cm): 
+D, [2019-09-04T14:07:51.283862 #11965] DEBUG -- : label repaint 15 5 Dob(dd/mm/yy): 
+D, [2019-09-04T14:07:51.283910 #11965] DEBUG -- : repaint FIELD: name, r:3 c:25,wid:35,maxlen: 35,pcol:0,  true st: HIGHLIGHTED 
+D, [2019-09-04T14:07:51.283979 #11965] DEBUG -- : repaint FIELD: weight(kg), r:7 c:25,wid:35,maxlen: 3,pcol:0,  true st: NORMAL 
+D, [2019-09-04T14:07:51.284014 #11965] DEBUG -- : repaint FIELD: height(m), r:11 c:25,wid:35,maxlen: 4,pcol:0,  true st: NORMAL 
+D, [2019-09-04T14:07:51.284047 #11965] DEBUG -- : repaint FIELD: d.o.b, r:15 c:25,wid:35,maxlen: 35,pcol:0,  true st: NORMAL 
+D, [2019-09-04T14:07:53.119434 #11965] DEBUG -- : inside handle key of field with 100
+D, [2019-09-04T14:07:53.119684 #11965] DEBUG -- : inside def fire_handler evt:CHANGE, o: Umbra::InputDataEvent
+D, [2019-09-04T14:07:53.119815 #11965] DEBUG -- : handled inside Form 100 from #<Umbra::Field:0x00007f845f2c08e0> got 0  
+D, [2019-09-04T14:07:53.119878 #11965] DEBUG -- :  form before repaint  , , ret 
+D, [2019-09-04T14:07:53.119932 #11965] DEBUG -- :  form repaint:,  , r 3 c 25 
+D, [2019-09-04T14:07:53.120002 #11965] DEBUG -- : repaint FIELD: name, r:3 c:25,wid:35,maxlen: 35,pcol:0,  true st: HIGHLIGHTED 
+D, [2019-09-04T14:08:04.170638 #11965] DEBUG -- :  form RESIZE SIGWINCH HK 410 , , 410, x 25 y 80  lines 25 , cols: 80 
+D, [2019-09-04T14:08:04.171473 #11965] DEBUG -- :   REPAINT ALL in FORM called 
+D, [2019-09-04T14:08:04.171529 #11965] DEBUG -- :    ---- REPAINT ALL Setup Userprofile 
+D, [2019-09-04T14:08:04.171559 #11965] DEBUG -- : label repaint 0 0 Setup Userprofile 
+D, [2019-09-04T14:08:04.171652 #11965] DEBUG -- :    ---- REPAINT ALL Name: 
+D, [2019-09-04T14:08:04.171707 #11965] DEBUG -- : label repaint 3 5 Name: 
+D, [2019-09-04T14:08:04.171757 #11965] DEBUG -- :    ---- REPAINT ALL Weight(kg): 
+D, [2019-09-04T14:08:04.171817 #11965] DEBUG -- : label repaint 7 5 Weight(kg): 
+D, [2019-09-04T14:08:04.171927 #11965] DEBUG -- :    ---- REPAINT ALL Height(cm): 
+D, [2019-09-04T14:08:04.171990 #11965] DEBUG -- : label repaint 11 5 Height(cm): 
+D, [2019-09-04T14:08:04.172074 #11965] DEBUG -- :    ---- REPAINT ALL Dob(dd/mm/yy): 
+D, [2019-09-04T14:08:04.172100 #11965] DEBUG -- : label repaint 15 5 Dob(dd/mm/yy): 
+D, [2019-09-04T14:08:04.172144 #11965] DEBUG -- :    ---- REPAINT ALL name 
+D, [2019-09-04T14:08:04.172191 #11965] DEBUG -- : repaint FIELD: name, r:3 c:25,wid:35,maxlen: 35,pcol:0,  true st: HIGHLIGHTED 
+D, [2019-09-04T14:08:04.172236 #11965] DEBUG -- :    ---- REPAINT ALL weight(kg) 
+D, [2019-09-04T14:08:04.172262 #11965] DEBUG -- : repaint FIELD: weight(kg), r:7 c:25,wid:35,maxlen: 3,pcol:0,  true st: NORMAL 
+D, [2019-09-04T14:08:04.172299 #11965] DEBUG -- :    ---- REPAINT ALL height(m) 
+D, [2019-09-04T14:08:04.172323 #11965] DEBUG -- : repaint FIELD: height(m), r:11 c:25,wid:35,maxlen: 4,pcol:0,  true st: NORMAL 
+D, [2019-09-04T14:08:04.172358 #11965] DEBUG -- :    ---- REPAINT ALL d.o.b 
+D, [2019-09-04T14:08:04.172398 #11965] DEBUG -- : repaint FIELD: d.o.b, r:15 c:25,wid:35,maxlen: 35,pcol:0,  true st: NORMAL 

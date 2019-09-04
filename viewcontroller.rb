@@ -16,14 +16,15 @@ include Statusline
 
 
 begin
-
+ 
   include Umbra
   init_curses
   startup
+ 
   #FFI::NCurses.init_pair(12,  COLOR_WHITE, FFI::NCurses::RED)
   win = Window.new
   #statusline(win, " "*(win.width-0), 0)
-  statusline(win, "ctrl+Q:Close |ctrl+S:Save |ctrl+D:Diet Plan |ctrl+K:Exercise Plan", 10)
+  statusline(win, "ctrl+Q:Close |enter:Save |ctrl+D:Diet Plan |ctrl+K:Exercise Plan", 10)
  
   title = Label.new( :text => "Setup Userprofile", :row => 0, :col => 0 , :width => FFI::NCurses.COLS-1, 
                     :justify => :center, :color_pair => CP_BLACK)
@@ -63,16 +64,19 @@ begin
   
   #onchange bound event
    fhash["name"].type = :alpha
+   fhash["name"].valid_regex = /\w[A-z]+/
    fhash["name"].bind_event(:CHANGE) do |f|
-    name = "#{f.getvalue}"
+    @name = "#{f.getvalue}"
   end
    fhash["weight(kg)"].type = :integer
    fhash["weight(kg)"].maxlen = 3
+   fhash["weight(kg)"].valid_range = (20..300)
    fhash["weight(kg)"].bind_event(:CHANGE) do |f|
     weight = "#{f.getvalue}"
   end
    fhash["height(m)"].type = :float
    fhash["height(m)"].maxlen = 4
+   fhash["height(m)"].valid_range = (0.5..2.5)
    fhash["height(m)"].bind_event(:CHANGE) do |f|
     height = "#{f.getvalue}"
   end
@@ -101,6 +105,7 @@ begin
       form.handle_key ch
 
       if ch == FFI::NCurses::KEY_RETURN
+        
     begin
     win = Window.new
     win.printstring(10,10, "#{name}");

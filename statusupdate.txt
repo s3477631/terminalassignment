@@ -3,3 +3,13 @@ Wednesday 3.10pm
 I spent most of today and last night refactoring a form based ontop of the curses library. 
 It feels like an uphill battle - but I can see the overall efficiency gains closer to the end of the project. 
 - textboxes are working and user input: the return button can change user views by firstly destroying our view and then reinstantiating a different one.
+
+Thursday 5.10am 
+
+Was on a roll, so I coded half the night - Im having some difficulty destroying and reinstantiating views between menu options - it shouldn't take too long to trace the issue. 
+I've tested and coded the major parts of the MVC: 1. read/writing to file system (working fine) 2. graphical user interface (not much futher to go) 
+I hope to add accessibility features: text-to-speech, etc. 
+Ive re-written an example gui - however, it could be further abstracted to a class (for each window)
+I may still do that - at this point each window is inside a module which is called from viewcontroller 
+I could further define textboxes and labels and so forth and truly multi-thread. 
+However, I will focus on multi-threading the data to be manipulated and leave the user interface for now

@@ -8,7 +8,7 @@ def startup
       $log.level = Logger::DEBUG
       today = Date.today
       $log.info "Field demo #{$0} started on #{today}"
-      FFI::NCurses.init_pair(10,  FFI::NCurses::WHITE,   FFI::NCurses::GREEN) # statusline
+      FFI::NCurses.init_pair(10,  FFI::NCurses::WHITE,   FFI::NCurses::BLUE) # statusline
   end
 
 end

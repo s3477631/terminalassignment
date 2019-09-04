@@ -18,6 +18,18 @@ include Alert
 include Startup
 include Statusline
 
+begin
+    include Umbra
+    init_curses
+    startup
+   
+    FFI::NCurses.init_pair(12,  COLOR_WHITE, FFI::NCurses::COLOR_MAGENTA)
+    win = Window.new
+    #statusline(win, " "*(win.width-0), 0)
+    statusline(win, "ctrl+Q:Close |enter:Save |ctrl+D:Diet Plan |ctrl+K:Exercise Plan", 10)
+
+end
+
 
 begin
  
@@ -25,7 +37,7 @@ begin
   init_curses
   startup
  
-  #FFI::NCurses.init_pair(12,  COLOR_WHITE, FFI::NCurses::RED)
+  FFI::NCurses.init_pair(12,  COLOR_WHITE, FFI::NCurses::COLOR_MAGENTA)
   win = Window.new
   #statusline(win, " "*(win.width-0), 0)
   statusline(win, "ctrl+Q:Close |enter:Save |ctrl+D:Diet Plan |ctrl+K:Exercise Plan", 10)
@@ -33,8 +45,8 @@ begin
   dob = ''
   weight = ''
   height = 0.0
-  title = Label.new( :text => "Setup Userprofile", :row => 0, :col => 0 , :width => FFI::NCurses.COLS-1, 
-                    :justify => :center, :color_pair => CP_BLACK)
+  title = Label.new( :text => "Setup User Profile", :row => 0, :col => 0 , :width => FFI::NCurses.COLS-1, 
+                    :justify => :center, :color_pair => CP_BLUE)
 
   
   form = Form.new win
@@ -49,7 +61,7 @@ begin
     w = Label.new( :text => lab, :row => row, :col => col , :width => 20)
     labs << w
     row += 4
-    w.color_pair = CP_WHITE
+    w.color_pair = CP_RED
     w.justify = :right
     w.attr = FFI::NCurses::A_BOLD
     form.add_widget w
@@ -67,9 +79,9 @@ begin
     w = Field.new( :name => lab, :row => row, :col => col , :width => 35)
     fhash[lab] = w
     row += 4
-    w.color_pair = CP_CYAN
+    w.color_pair = CP_MAGENTA
     w.attr = FFI::NCurses::A_REVERSE
-    w.highlight_color_pair = CP_YELLOW
+    w.highlight_color_pair = CP_WHITE
     w.highlight_attr = REVERSE
     w.null_allowed = false
     form.add_widget w
@@ -80,7 +92,7 @@ begin
    fhash["name"].valid_regex = /\w[A-z]+/
    fhash["name"].bind_event(:CHANGE) do |f|
     name = "#{f.getvalue}"
-    win.printstring( FFI::NCurses.LINES-19, col, "Hello #{name}, it's going to be a pleasure hanging out", 10)
+    win.printstring(FFI::NCurses.LINES-19, col, "Hello #{name}, it's going to be a pleasure hanging out", 10 )
     
   end
    fhash["weight(kg)"].type = :integer
@@ -88,14 +100,14 @@ begin
    fhash["weight(kg)"].valid_range = (20..300)
    fhash["weight(kg)"].bind_event(:CHANGE) do |f|
     weight = "#{f.getvalue}"
-    win.printstring( FFI::NCurses.LINES-15, col, "I weigh #{weight} kilograms or #{(weight.to_i * 2.2).round(3)} lbs", 10)
+    win.printstring(FFI::NCurses.LINES-15, col, "I weigh #{weight} kilograms or #{(weight.to_i * 2.2).round(3)} lbs", 10)
   end
    fhash["height(m)"].type = :float
    fhash["height(m)"].maxlen = 4
    fhash["height(m)"].valid_range = (0.5..2.5)
    fhash["height(m)"].bind_event(:CHANGE) do |f|
     height = "#{f.getvalue}"
-    win.printstring( FFI::NCurses.LINES-11, col, "I'm #{height} m tall or #{(height.to_f * 3.2).round(1)} ft", 10)
+    win.printstring(FFI::NCurses.LINES-11, col, "I'm #{height} m tall or #{(height.to_f * 3.2).round(1)} ft", 10)
   end
    fhash["dob"].valid_regex = /\d{2,4}-\d{1,2}-\d-{1,2}/
   # fhash["mobile"].chars_allowed = /[\d\-]/

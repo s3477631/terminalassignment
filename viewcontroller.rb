@@ -4,6 +4,10 @@
 require 'umbra'
 require 'umbra/label'
 require 'umbra/field'
+require 'rubygems'
+require "active_support/all"
+require 'time_difference'
+require 'date'
 require_relative "./modules/footer"
 require_relative "./modules/alert"
 require_relative "./modules/startup"
@@ -25,14 +29,20 @@ begin
   win = Window.new
   #statusline(win, " "*(win.width-0), 0)
   statusline(win, "ctrl+Q:Close |enter:Save |ctrl+D:Diet Plan |ctrl+K:Exercise Plan", 10)
- 
+  name = ''
+  dob = ''
+  weight = ''
+  height = 0.0
   title = Label.new( :text => "Setup Userprofile", :row => 0, :col => 0 , :width => FFI::NCurses.COLS-1, 
                     :justify => :center, :color_pair => CP_BLACK)
 
+  
   form = Form.new win
   form.add_widget title
-  labels = ["Name:", "Weight(kg):", "Height(m):","Dob(dd/mm/yy):"]
+
+  labels = ["Name:", "Weight(kg):", "Height(m):","Dob(yyyy-mm-dd):"]
   labs = []
+  
   row = 3
   col = 5
   labels.each_with_index {|lab, ix| 
@@ -44,8 +54,11 @@ begin
     w.attr = FFI::NCurses::A_BOLD
     form.add_widget w
   }
-  labels = ["Devin Reeks", "80","180", "d.o.b"]
-  labels = ["name", "weight(kg)","height(m)", "d.o.b"]
+
+
+  
+  labels = ["Devin Reeks", "80","180", "dob"]
+  labels = ["name", "weight(kg)","height(m)", "dob"]
  
   row = 3
   col = 25
@@ -66,28 +79,43 @@ begin
    fhash["name"].type = :alpha
    fhash["name"].valid_regex = /\w[A-z]+/
    fhash["name"].bind_event(:CHANGE) do |f|
-    @name = "#{f.getvalue}"
+    name = "#{f.getvalue}"
+    win.printstring( FFI::NCurses.LINES-19, col, "Hello #{name}, it's going to be a pleasure hanging out", 10)
+    
   end
    fhash["weight(kg)"].type = :integer
    fhash["weight(kg)"].maxlen = 3
    fhash["weight(kg)"].valid_range = (20..300)
    fhash["weight(kg)"].bind_event(:CHANGE) do |f|
     weight = "#{f.getvalue}"
+    win.printstring( FFI::NCurses.LINES-15, col, "I weigh #{weight} kilograms or #{(weight.to_i * 2.2).round(3)} lbs", 10)
   end
    fhash["height(m)"].type = :float
    fhash["height(m)"].maxlen = 4
    fhash["height(m)"].valid_range = (0.5..2.5)
    fhash["height(m)"].bind_event(:CHANGE) do |f|
     height = "#{f.getvalue}"
+    win.printstring( FFI::NCurses.LINES-11, col, "I'm #{height} m tall or #{(height.to_f * 3.2).round(1)} ft", 10)
   end
-   fhash["d.o.b"].valid_regex = /\d{1,2}\d{1,2}\d{2,4}/
+   fhash["dob"].valid_regex = /\d{2,4}-\d{1,2}-\d-{1,2}/
   # fhash["mobile"].chars_allowed = /[\d\-]/
   # fhash["mobile"].maxlen = 10
-  # fhash["mobile"].bind_event(:CHANGE) do |f|
-  #   message_label.text = "#{f.getvalue.size()} chars entered"
-  #   statusline(win, "#{f.getvalue.size()} chars entered")
-  #   message_label.repaint_required
-  # end
+  fhash["dob"].bind_event(:CHANGE) do |f|
+     dob = "#{f.getvalue}"
+
+     if dob.length() >= 10 
+        today = Time.new
+        today_year = today.year
+        today_month = today.month
+        today_day = today.day
+        start_date = Date.parse("#{dob}")
+        end_date =  Date.parse("#{today_year}-#{today_month}-#{today_day}")
+        outputans = (end_date - start_date)
+        outputans = (outputans.to_i/365)
+        win.printstring( FFI::NCurses.LINES-7, col, "Wow, you are #{outputans} year's old, well done!", 10)
+     end
+     
+   end
   # fhash["email"].chars_allowed = /[\w\+\.\@]/
   # fhash["email"].valid_regex = /\w+\@\w+\.\w+/
   # fhash["age"].valid_range = (18..100)
@@ -104,11 +132,13 @@ begin
     begin
       form.handle_key ch
 
-      if ch == FFI::NCurses::KEY_RETURN
+      if ch == FFI::NCurses::KEY_RETURN && "#{dob}" != ''
+       
         
-    begin
+    begin   
+        
     win = Window.new
-    win.printstring(10,10, "#{name}");
+    win.printstring(10,10, "Thank you #{name}! your user profile has been created!");
     win.wrefresh
    win.getchar
     ensure

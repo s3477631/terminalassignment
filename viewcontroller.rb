@@ -4,36 +4,19 @@
 require 'umbra'
 require 'umbra/label'
 require 'umbra/field'
+require_relative "./modules/footer"
+require_relative "./modules/alert"
+require_relative "./modules/startup"
+require_relative "./modules/statusline"
 
-def create_footer_window h = 2 , w = FFI::NCurses.COLS, t = FFI::NCurses.LINES-5, l = 0
-  ewin = Window.new(h, w , t, l)
-end
-def _alert str 
-  win = create_footer_window
-  FFI::NCurses.init_pair(12,  COLOR_WHITE, FFI::NCurses::RED)
-  cp = create_color_pair(COLOR_RED, COLOR_WHITE)
-  win.wbkgd(FFI::NCurses.COLOR_PAIR(cp)) # white on red, defined here
-  win.printstring(0,1, str)
-  win.wrefresh
-  win.getkey
-  win.destroy
-end
-def startup
-  require 'logger'
-  require 'date'
+include Footer 
+include Alert
+include Startup
+include Statusline
 
-    path = File.join(ENV["LOGDIR"] || "./" ,"v.log")
-    file   = File.open(path, File::WRONLY|File::TRUNC|File::CREAT) 
-    $log = Logger.new(path)
-    $log.level = Logger::DEBUG
-    today = Date.today
-    $log.info "Field demo #{$0} started on #{today}"
-    FFI::NCurses.init_pair(10,  FFI::NCurses::WHITE,   FFI::NCurses::GREEN) # statusline
-end
-def statusline win, str, col = 0
-  win.printstring( FFI::NCurses.LINES-2, col, str, 10)
-end
+
 begin
+
   include Umbra
   init_curses
   startup
@@ -42,13 +25,12 @@ begin
   #statusline(win, " "*(win.width-0), 0)
   statusline(win, "ctrl+Q:Close |ctrl+S:Save |ctrl+D:Diet Plan |ctrl+K:Exercise Plan", 10)
  
-  
   title = Label.new( :text => "Setup Userprofile", :row => 0, :col => 0 , :width => FFI::NCurses.COLS-1, 
                     :justify => :center, :color_pair => CP_BLACK)
 
   form = Form.new win
   form.add_widget title
-  labels = ["Name:", "Weight(kg):", "Height(cm):","Dob(dd/mm/yy):"]
+  labels = ["Name:", "Weight(kg):", "Height(m):","Dob(dd/mm/yy):"]
   labs = []
   row = 3
   col = 5
@@ -75,15 +57,25 @@ begin
     w.attr = FFI::NCurses::A_REVERSE
     w.highlight_color_pair = CP_YELLOW
     w.highlight_attr = REVERSE
-    w.null_allowed = true
+    w.null_allowed = false
     form.add_widget w
   }
-
+  
+  #onchange bound event
    fhash["name"].type = :alpha
+   fhash["name"].bind_event(:CHANGE) do |f|
+    name = "#{f.getvalue}"
+  end
    fhash["weight(kg)"].type = :integer
    fhash["weight(kg)"].maxlen = 3
+   fhash["weight(kg)"].bind_event(:CHANGE) do |f|
+    weight = "#{f.getvalue}"
+  end
    fhash["height(m)"].type = :float
    fhash["height(m)"].maxlen = 4
+   fhash["height(m)"].bind_event(:CHANGE) do |f|
+    height = "#{f.getvalue}"
+  end
    fhash["d.o.b"].valid_regex = /\d{1,2}\d{1,2}\d{2,4}/
   # fhash["mobile"].chars_allowed = /[\d\-]/
   # fhash["mobile"].maxlen = 10
@@ -99,6 +91,7 @@ begin
   form.pack
   form.select_first_field
   win.wrefresh
+ 
 
   y = x = 1
 
@@ -110,7 +103,7 @@ begin
       if ch == FFI::NCurses::KEY_RETURN
     begin
     win = Window.new
-    win.printstring(10,10, "Hello World!");
+    win.printstring(10,10, "#{name}");
     win.wrefresh
    win.getchar
     ensure

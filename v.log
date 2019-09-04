@@ -1,152 +1,33 @@
-I, [2019-09-04T15:19:52.612841 #12508]  INFO -- : Field demo viewcontroller.rb started on 2019-09-04
-D, [2019-09-04T15:19:52.613335 #12508] DEBUG -- :   on_enter: setting original_value to 
-D, [2019-09-04T15:19:52.613395 #12508] DEBUG -- :  form repaint:,  , r 3 c 25 
-D, [2019-09-04T15:19:52.613432 #12508] DEBUG -- : label repaint 0 0 Setup Userprofile 
-D, [2019-09-04T15:19:52.613506 #12508] DEBUG -- : label repaint 3 5 Name: 
-D, [2019-09-04T15:19:52.613551 #12508] DEBUG -- : label repaint 7 5 Weight(kg): 
-D, [2019-09-04T15:19:52.613590 #12508] DEBUG -- : label repaint 11 5 Height(cm): 
-D, [2019-09-04T15:19:52.613642 #12508] DEBUG -- : label repaint 15 5 Dob(dd/mm/yy): 
-D, [2019-09-04T15:19:52.613685 #12508] DEBUG -- : repaint FIELD: name, r:3 c:25,wid:35,maxlen: 35,pcol:0,  true st: HIGHLIGHTED 
-D, [2019-09-04T15:19:52.613746 #12508] DEBUG -- : repaint FIELD: weight(kg), r:7 c:25,wid:35,maxlen: 3,pcol:0,  true st: NORMAL 
-D, [2019-09-04T15:19:52.613782 #12508] DEBUG -- : repaint FIELD: height(m), r:11 c:25,wid:35,maxlen: 4,pcol:0,  true st: NORMAL 
-D, [2019-09-04T15:19:52.613814 #12508] DEBUG -- : repaint FIELD: d.o.b, r:15 c:25,wid:35,maxlen: 35,pcol:0,  true st: NORMAL 
-D, [2019-09-04T15:19:53.580773 #12508] DEBUG -- : inside handle key of field with 68
-D, [2019-09-04T15:19:53.580929 #12508] DEBUG -- : inside def fire_handler evt:CHANGE, o: Umbra::InputDataEvent
-D, [2019-09-04T15:19:53.580982 #12508] DEBUG -- : handled inside Form 68 from #<Umbra::Field:0x00007feda02d36c0> got 0  
-D, [2019-09-04T15:19:53.581071 #12508] DEBUG -- :  form before repaint  , , ret 
-D, [2019-09-04T15:19:53.581111 #12508] DEBUG -- :  form repaint:,  , r 3 c 25 
-D, [2019-09-04T15:19:53.581160 #12508] DEBUG -- : repaint FIELD: name, r:3 c:25,wid:35,maxlen: 35,pcol:0,  true st: HIGHLIGHTED 
-D, [2019-09-04T15:19:53.772333 #12508] DEBUG -- : inside handle key of field with 101
-D, [2019-09-04T15:19:53.772526 #12508] DEBUG -- : inside def fire_handler evt:CHANGE, o: Umbra::InputDataEvent
-D, [2019-09-04T15:19:53.772587 #12508] DEBUG -- : handled inside Form 101 from #<Umbra::Field:0x00007feda02d36c0> got 0  
-D, [2019-09-04T15:19:53.772642 #12508] DEBUG -- :  form before repaint  , , ret 
-D, [2019-09-04T15:19:53.772680 #12508] DEBUG -- :  form repaint:,  , r 3 c 26 
-D, [2019-09-04T15:19:53.772730 #12508] DEBUG -- : repaint FIELD: name, r:3 c:25,wid:35,maxlen: 35,pcol:0,  true st: HIGHLIGHTED 
-D, [2019-09-04T15:19:53.957394 #12508] DEBUG -- : inside handle key of field with 118
-D, [2019-09-04T15:19:53.957714 #12508] DEBUG -- : inside def fire_handler evt:CHANGE, o: Umbra::InputDataEvent
-D, [2019-09-04T15:19:53.957832 #12508] DEBUG -- : handled inside Form 118 from #<Umbra::Field:0x00007feda02d36c0> got 0  
-D, [2019-09-04T15:19:53.957895 #12508] DEBUG -- :  form before repaint  , , ret 
-D, [2019-09-04T15:19:53.957936 #12508] DEBUG -- :  form repaint:,  , r 3 c 27 
-D, [2019-09-04T15:19:53.957987 #12508] DEBUG -- : repaint FIELD: name, r:3 c:25,wid:35,maxlen: 35,pcol:0,  true st: HIGHLIGHTED 
-D, [2019-09-04T15:19:54.069013 #12508] DEBUG -- : inside handle key of field with 105
-D, [2019-09-04T15:19:54.071005 #12508] DEBUG -- : inside def fire_handler evt:CHANGE, o: Umbra::InputDataEvent
-D, [2019-09-04T15:19:54.071129 #12508] DEBUG -- : handled inside Form 105 from #<Umbra::Field:0x00007feda02d36c0> got 0  
-D, [2019-09-04T15:19:54.071226 #12508] DEBUG -- :  form before repaint  , , ret 
-D, [2019-09-04T15:19:54.071273 #12508] DEBUG -- :  form repaint:,  , r 3 c 28 
-D, [2019-09-04T15:19:54.071332 #12508] DEBUG -- : repaint FIELD: name, r:3 c:25,wid:35,maxlen: 35,pcol:0,  true st: HIGHLIGHTED 
-D, [2019-09-04T15:19:54.274347 #12508] DEBUG -- : inside handle key of field with 110
-D, [2019-09-04T15:19:54.274542 #12508] DEBUG -- : inside def fire_handler evt:CHANGE, o: Umbra::InputDataEvent
-D, [2019-09-04T15:19:54.274621 #12508] DEBUG -- : handled inside Form 110 from #<Umbra::Field:0x00007feda02d36c0> got 0  
-D, [2019-09-04T15:19:54.274680 #12508] DEBUG -- :  form before repaint  , , ret 
-D, [2019-09-04T15:19:54.274731 #12508] DEBUG -- :  form repaint:,  , r 3 c 29 
-D, [2019-09-04T15:19:54.274832 #12508] DEBUG -- : repaint FIELD: name, r:3 c:25,wid:35,maxlen: 35,pcol:0,  true st: HIGHLIGHTED 
-D, [2019-09-04T15:19:54.911724 #12508] DEBUG -- : inside handle key of field with 32
-D, [2019-09-04T15:19:54.911864 #12508] DEBUG -- : handled inside Form 32 from #<Umbra::Field:0x00007feda02d36c0> got 0  
-D, [2019-09-04T15:19:54.911918 #12508] DEBUG -- :  form before repaint  , , ret 
-D, [2019-09-04T15:19:54.911956 #12508] DEBUG -- :  form repaint:,  , r 3 c 30 
-D, [2019-09-04T15:19:54.912029 #12508] DEBUG -- : repaint FIELD: name, r:3 c:25,wid:35,maxlen: 35,pcol:0,  true st: HIGHLIGHTED 
-D, [2019-09-04T15:19:55.150029 #12508] DEBUG -- : inside handle key of field with 82
-D, [2019-09-04T15:19:55.151100 #12508] DEBUG -- : inside def fire_handler evt:CHANGE, o: Umbra::InputDataEvent
-D, [2019-09-04T15:19:55.151156 #12508] DEBUG -- : handled inside Form 82 from #<Umbra::Field:0x00007feda02d36c0> got 0  
-D, [2019-09-04T15:19:55.151188 #12508] DEBUG -- :  form before repaint  , , ret 
-D, [2019-09-04T15:19:55.151215 #12508] DEBUG -- :  form repaint:,  , r 3 c 30 
-D, [2019-09-04T15:19:55.151250 #12508] DEBUG -- : repaint FIELD: name, r:3 c:25,wid:35,maxlen: 35,pcol:0,  true st: HIGHLIGHTED 
-D, [2019-09-04T15:19:55.329198 #12508] DEBUG -- : inside handle key of field with 101
-D, [2019-09-04T15:19:55.329333 #12508] DEBUG -- : inside def fire_handler evt:CHANGE, o: Umbra::InputDataEvent
-D, [2019-09-04T15:19:55.329376 #12508] DEBUG -- : handled inside Form 101 from #<Umbra::Field:0x00007feda02d36c0> got 0  
-D, [2019-09-04T15:19:55.329427 #12508] DEBUG -- :  form before repaint  , , ret 
-D, [2019-09-04T15:19:55.329454 #12508] DEBUG -- :  form repaint:,  , r 3 c 31 
-D, [2019-09-04T15:19:55.329490 #12508] DEBUG -- : repaint FIELD: name, r:3 c:25,wid:35,maxlen: 35,pcol:0,  true st: HIGHLIGHTED 
-D, [2019-09-04T15:19:55.466215 #12508] DEBUG -- : inside handle key of field with 101
-D, [2019-09-04T15:19:55.466355 #12508] DEBUG -- : inside def fire_handler evt:CHANGE, o: Umbra::InputDataEvent
-D, [2019-09-04T15:19:55.466408 #12508] DEBUG -- : handled inside Form 101 from #<Umbra::Field:0x00007feda02d36c0> got 0  
-D, [2019-09-04T15:19:55.466445 #12508] DEBUG -- :  form before repaint  , , ret 
-D, [2019-09-04T15:19:55.466477 #12508] DEBUG -- :  form repaint:,  , r 3 c 32 
-D, [2019-09-04T15:19:55.466522 #12508] DEBUG -- : repaint FIELD: name, r:3 c:25,wid:35,maxlen: 35,pcol:0,  true st: HIGHLIGHTED 
-D, [2019-09-04T15:19:55.754271 #12508] DEBUG -- : inside handle key of field with 127
-D, [2019-09-04T15:19:55.754492 #12508] DEBUG -- : inside def fire_handler evt:CHANGE, o: Umbra::InputDataEvent
-D, [2019-09-04T15:19:55.754562 #12508] DEBUG -- : handled inside Form 127 from #<Umbra::Field:0x00007feda02d36c0> got 0  
-D, [2019-09-04T15:19:55.754610 #12508] DEBUG -- :  form before repaint  , , ret 
-D, [2019-09-04T15:19:55.754651 #12508] DEBUG -- :  form repaint:,  , r 3 c 33 
-D, [2019-09-04T15:19:55.754707 #12508] DEBUG -- : repaint FIELD: name, r:3 c:25,wid:35,maxlen: 35,pcol:0,  true st: HIGHLIGHTED 
-D, [2019-09-04T15:19:55.889926 #12508] DEBUG -- : inside handle key of field with 127
-D, [2019-09-04T15:19:55.890089 #12508] DEBUG -- : inside def fire_handler evt:CHANGE, o: Umbra::InputDataEvent
-D, [2019-09-04T15:19:55.890163 #12508] DEBUG -- : handled inside Form 127 from #<Umbra::Field:0x00007feda02d36c0> got 0  
-D, [2019-09-04T15:19:55.890254 #12508] DEBUG -- :  form before repaint  , , ret 
-D, [2019-09-04T15:19:55.890296 #12508] DEBUG -- :  form repaint:,  , r 3 c 32 
-D, [2019-09-04T15:19:55.890351 #12508] DEBUG -- : repaint FIELD: name, r:3 c:25,wid:35,maxlen: 35,pcol:0,  true st: HIGHLIGHTED 
-D, [2019-09-04T15:19:56.019135 #12508] DEBUG -- : inside handle key of field with 127
-D, [2019-09-04T15:19:56.019311 #12508] DEBUG -- : inside def fire_handler evt:CHANGE, o: Umbra::InputDataEvent
-D, [2019-09-04T15:19:56.019379 #12508] DEBUG -- : handled inside Form 127 from #<Umbra::Field:0x00007feda02d36c0> got 0  
-D, [2019-09-04T15:19:56.019428 #12508] DEBUG -- :  form before repaint  , , ret 
-D, [2019-09-04T15:19:56.019471 #12508] DEBUG -- :  form repaint:,  , r 3 c 31 
-D, [2019-09-04T15:19:56.019576 #12508] DEBUG -- : repaint FIELD: name, r:3 c:25,wid:35,maxlen: 35,pcol:0,  true st: HIGHLIGHTED 
-D, [2019-09-04T15:19:56.653505 #12508] DEBUG -- : inside handle key of field with 9
-D, [2019-09-04T15:19:56.653635 #12508] DEBUG -- : handled inside Form 9 from #<Umbra::Field:0x00007feda02d36c0> got UNHANDLED  
-D, [2019-09-04T15:19:56.653698 #12508] DEBUG -- : Form setting state of name to NORMAL
-D, [2019-09-04T15:19:56.653755 #12508] DEBUG -- : inside def fire_handler evt:CHANGED, o: Umbra::Field
-D, [2019-09-04T15:19:56.653800 #12508] DEBUG -- :   on_enter: setting original_value to 
-D, [2019-09-04T15:19:56.653869 #12508] DEBUG -- :  form repaint:,  , r 7 c 25 
-D, [2019-09-04T15:19:56.653913 #12508] DEBUG -- : repaint FIELD: name, r:3 c:25,wid:35,maxlen: 35,pcol:0,  true st: NORMAL 
-D, [2019-09-04T15:19:56.654015 #12508] DEBUG -- : repaint FIELD: weight(kg), r:7 c:25,wid:35,maxlen: 3,pcol:0,  true st: HIGHLIGHTED 
-D, [2019-09-04T15:19:56.654197 #12508] DEBUG -- :  form before repaint  , , ret 0
-D, [2019-09-04T15:19:56.654240 #12508] DEBUG -- :  form repaint:,  , r 7 c 25 
-D, [2019-09-04T15:19:57.273436 #12508] DEBUG -- : inside handle key of field with 50
-D, [2019-09-04T15:19:57.273616 #12508] DEBUG -- : inside def fire_handler evt:CHANGE, o: Umbra::InputDataEvent
-D, [2019-09-04T15:19:57.273687 #12508] DEBUG -- : handled inside Form 50 from #<Umbra::Field:0x00007feda02d0ad8> got 0  
-D, [2019-09-04T15:19:57.273750 #12508] DEBUG -- :  form before repaint  , , ret 
-D, [2019-09-04T15:19:57.273792 #12508] DEBUG -- :  form repaint:,  , r 7 c 25 
-D, [2019-09-04T15:19:57.273849 #12508] DEBUG -- : repaint FIELD: weight(kg), r:7 c:25,wid:35,maxlen: 3,pcol:0,  true st: HIGHLIGHTED 
-D, [2019-09-04T15:19:57.477194 #12508] DEBUG -- : inside handle key of field with 51
-D, [2019-09-04T15:19:57.477336 #12508] DEBUG -- : inside def fire_handler evt:CHANGE, o: Umbra::InputDataEvent
-D, [2019-09-04T15:19:57.477389 #12508] DEBUG -- : handled inside Form 51 from #<Umbra::Field:0x00007feda02d0ad8> got 0  
-D, [2019-09-04T15:19:57.477425 #12508] DEBUG -- :  form before repaint  , , ret 
-D, [2019-09-04T15:19:57.477457 #12508] DEBUG -- :  form repaint:,  , r 7 c 26 
-D, [2019-09-04T15:19:57.477500 #12508] DEBUG -- : repaint FIELD: weight(kg), r:7 c:25,wid:35,maxlen: 3,pcol:0,  true st: HIGHLIGHTED 
-D, [2019-09-04T15:19:57.908319 #12508] DEBUG -- : inside handle key of field with 9
-D, [2019-09-04T15:19:57.908478 #12508] DEBUG -- : handled inside Form 9 from #<Umbra::Field:0x00007feda02d0ad8> got UNHANDLED  
-D, [2019-09-04T15:19:57.908543 #12508] DEBUG -- : Form setting state of weight(kg) to NORMAL
-D, [2019-09-04T15:19:57.908606 #12508] DEBUG -- : inside def fire_handler evt:CHANGED, o: Umbra::Field
-D, [2019-09-04T15:19:57.908661 #12508] DEBUG -- :   on_enter: setting original_value to 
-D, [2019-09-04T15:19:57.908715 #12508] DEBUG -- :  form repaint:,  , r 11 c 25 
-D, [2019-09-04T15:19:57.908772 #12508] DEBUG -- : repaint FIELD: weight(kg), r:7 c:25,wid:35,maxlen: 3,pcol:0,  true st: NORMAL 
-D, [2019-09-04T15:19:57.908927 #12508] DEBUG -- : repaint FIELD: height(m), r:11 c:25,wid:35,maxlen: 4,pcol:0,  true st: HIGHLIGHTED 
-D, [2019-09-04T15:19:57.909180 #12508] DEBUG -- :  form before repaint  , , ret 0
-D, [2019-09-04T15:19:57.909238 #12508] DEBUG -- :  form repaint:,  , r 11 c 25 
-D, [2019-09-04T15:19:58.607118 #12508] DEBUG -- : inside handle key of field with 49
-D, [2019-09-04T15:19:58.607320 #12508] DEBUG -- : inside def fire_handler evt:CHANGE, o: Umbra::InputDataEvent
-D, [2019-09-04T15:19:58.607401 #12508] DEBUG -- : handled inside Form 49 from #<Umbra::Field:0x00007feda02cb3f8> got 0  
-D, [2019-09-04T15:19:58.607449 #12508] DEBUG -- :  form before repaint  , , ret 
-D, [2019-09-04T15:19:58.607590 #12508] DEBUG -- :  form repaint:,  , r 11 c 25 
-D, [2019-09-04T15:19:58.607657 #12508] DEBUG -- : repaint FIELD: height(m), r:11 c:25,wid:35,maxlen: 4,pcol:0,  true st: HIGHLIGHTED 
-D, [2019-09-04T15:19:58.996231 #12508] DEBUG -- : inside handle key of field with 46
-D, [2019-09-04T15:19:58.996429 #12508] DEBUG -- : inside def fire_handler evt:CHANGE, o: Umbra::InputDataEvent
-D, [2019-09-04T15:19:58.996543 #12508] DEBUG -- : handled inside Form 46 from #<Umbra::Field:0x00007feda02cb3f8> got 0  
-D, [2019-09-04T15:19:58.996597 #12508] DEBUG -- :  form before repaint  , , ret 
-D, [2019-09-04T15:19:58.996641 #12508] DEBUG -- :  form repaint:,  , r 11 c 26 
-D, [2019-09-04T15:19:58.996701 #12508] DEBUG -- : repaint FIELD: height(m), r:11 c:25,wid:35,maxlen: 4,pcol:0,  true st: HIGHLIGHTED 
-D, [2019-09-04T15:19:59.124228 #12508] DEBUG -- : inside handle key of field with 52
-D, [2019-09-04T15:19:59.124401 #12508] DEBUG -- : inside def fire_handler evt:CHANGE, o: Umbra::InputDataEvent
-D, [2019-09-04T15:19:59.124472 #12508] DEBUG -- : handled inside Form 52 from #<Umbra::Field:0x00007feda02cb3f8> got 0  
-D, [2019-09-04T15:19:59.124521 #12508] DEBUG -- :  form before repaint  , , ret 
-D, [2019-09-04T15:19:59.124598 #12508] DEBUG -- :  form repaint:,  , r 11 c 27 
-D, [2019-09-04T15:19:59.124660 #12508] DEBUG -- : repaint FIELD: height(m), r:11 c:25,wid:35,maxlen: 4,pcol:0,  true st: HIGHLIGHTED 
-D, [2019-09-04T15:19:59.431258 #12508] DEBUG -- : inside handle key of field with 57
-D, [2019-09-04T15:19:59.431429 #12508] DEBUG -- : inside def fire_handler evt:CHANGE, o: Umbra::InputDataEvent
-D, [2019-09-04T15:19:59.431482 #12508] DEBUG -- : handled inside Form 57 from #<Umbra::Field:0x00007feda02cb3f8> got 0  
-D, [2019-09-04T15:19:59.431518 #12508] DEBUG -- :  form before repaint  , , ret 
-D, [2019-09-04T15:19:59.431550 #12508] DEBUG -- :  form repaint:,  , r 11 c 28 
-D, [2019-09-04T15:19:59.431595 #12508] DEBUG -- : repaint FIELD: height(m), r:11 c:25,wid:35,maxlen: 4,pcol:0,  true st: HIGHLIGHTED 
-D, [2019-09-04T15:19:59.853377 #12508] DEBUG -- : inside handle key of field with 9
-D, [2019-09-04T15:19:59.853523 #12508] DEBUG -- : handled inside Form 9 from #<Umbra::Field:0x00007feda02cb3f8> got UNHANDLED  
-D, [2019-09-04T15:19:59.853577 #12508] DEBUG -- : Form setting state of height(m) to NORMAL
-D, [2019-09-04T15:19:59.853656 #12508] DEBUG -- : inside def fire_handler evt:CHANGED, o: Umbra::Field
-D, [2019-09-04T15:19:59.853705 #12508] DEBUG -- :   on_enter: setting original_value to 
-D, [2019-09-04T15:19:59.853750 #12508] DEBUG -- :  form repaint:,  , r 15 c 25 
-D, [2019-09-04T15:19:59.853801 #12508] DEBUG -- : repaint FIELD: height(m), r:11 c:25,wid:35,maxlen: 4,pcol:0,  true st: NORMAL 
-D, [2019-09-04T15:19:59.853915 #12508] DEBUG -- : repaint FIELD: d.o.b, r:15 c:25,wid:35,maxlen: 35,pcol:0,  true st: HIGHLIGHTED 
-D, [2019-09-04T15:19:59.854154 #12508] DEBUG -- :  form before repaint  , , ret 0
-D, [2019-09-04T15:19:59.854204 #12508] DEBUG -- :  form repaint:,  , r 15 c 25 
-D, [2019-09-04T15:20:00.624002 #12508] DEBUG -- : inside handle key of field with 10
-D, [2019-09-04T15:20:00.624187 #12508] DEBUG -- : handled inside Form 10 from #<Umbra::Field:0x00007feda02ca020> got UNHANDLED  
-D, [2019-09-04T15:20:00.624271 #12508] DEBUG -- : FORM process_key 10 got ret UNHANDLED in , flushing input 
+I, [2019-09-04T16:03:01.186948 #13184]  INFO -- : Field demo viewcontroller.rb started on 2019-09-04
+D, [2019-09-04T16:03:01.187389 #13184] DEBUG -- :   on_enter: setting original_value to 
+D, [2019-09-04T16:03:01.187427 #13184] DEBUG -- :  form repaint:,  , r 3 c 25 
+D, [2019-09-04T16:03:01.187449 #13184] DEBUG -- : label repaint 0 0 Setup Userprofile 
+D, [2019-09-04T16:03:01.187506 #13184] DEBUG -- : label repaint 3 5 Name: 
+D, [2019-09-04T16:03:01.187545 #13184] DEBUG -- : label repaint 7 5 Weight(kg): 
+D, [2019-09-04T16:03:01.187595 #13184] DEBUG -- : label repaint 11 5 Height(m): 
+D, [2019-09-04T16:03:01.187629 #13184] DEBUG -- : label repaint 15 5 Dob(dd/mm/yy): 
+D, [2019-09-04T16:03:01.187669 #13184] DEBUG -- : repaint FIELD: name, r:3 c:25,wid:35,maxlen: 35,pcol:0,  true st: HIGHLIGHTED 
+D, [2019-09-04T16:03:01.187720 #13184] DEBUG -- : repaint FIELD: weight(kg), r:7 c:25,wid:35,maxlen: 3,pcol:0,  true st: NORMAL 
+D, [2019-09-04T16:03:01.187768 #13184] DEBUG -- : repaint FIELD: height(m), r:11 c:25,wid:35,maxlen: 4,pcol:0,  true st: NORMAL 
+D, [2019-09-04T16:03:01.187801 #13184] DEBUG -- : repaint FIELD: d.o.b, r:15 c:25,wid:35,maxlen: 35,pcol:0,  true st: NORMAL 
+D, [2019-09-04T16:03:02.202243 #13184] DEBUG -- : inside handle key of field with 103
+D, [2019-09-04T16:03:02.202468 #13184] DEBUG -- : inside def fire_handler evt:CHANGE, o: Umbra::InputDataEvent
+D, [2019-09-04T16:03:02.202586 #13184] DEBUG -- : EVENTHANDLER: #<Umbra::Field:0x00007f8a1a8c54a0> called EventHandler firehander name, CHANGE
+D, [2019-09-04T16:03:02.202673 #13184] DEBUG -- : handled inside Form 103 from #<Umbra::Field:0x00007f8a1a8c54a0> got 0  
+D, [2019-09-04T16:03:02.202731 #13184] DEBUG -- :  form before repaint  , , ret 
+D, [2019-09-04T16:03:02.202782 #13184] DEBUG -- :  form repaint:,  , r 3 c 25 
+D, [2019-09-04T16:03:02.202894 #13184] DEBUG -- : repaint FIELD: name, r:3 c:25,wid:35,maxlen: 35,pcol:0,  true st: HIGHLIGHTED 
+D, [2019-09-04T16:03:02.502823 #13184] DEBUG -- : inside handle key of field with 115
+D, [2019-09-04T16:03:02.502967 #13184] DEBUG -- : inside def fire_handler evt:CHANGE, o: Umbra::InputDataEvent
+D, [2019-09-04T16:03:02.503025 #13184] DEBUG -- : EVENTHANDLER: #<Umbra::Field:0x00007f8a1a8c54a0> called EventHandler firehander name, CHANGE
+D, [2019-09-04T16:03:02.503075 #13184] DEBUG -- : handled inside Form 115 from #<Umbra::Field:0x00007f8a1a8c54a0> got 0  
+D, [2019-09-04T16:03:02.503110 #13184] DEBUG -- :  form before repaint  , , ret 
+D, [2019-09-04T16:03:02.503141 #13184] DEBUG -- :  form repaint:,  , r 3 c 26 
+D, [2019-09-04T16:03:02.503183 #13184] DEBUG -- : repaint FIELD: name, r:3 c:25,wid:35,maxlen: 35,pcol:0,  true st: HIGHLIGHTED 
+D, [2019-09-04T16:03:02.936087 #13184] DEBUG -- : inside handle key of field with 103
+D, [2019-09-04T16:03:02.936266 #13184] DEBUG -- : inside def fire_handler evt:CHANGE, o: Umbra::InputDataEvent
+D, [2019-09-04T16:03:02.936339 #13184] DEBUG -- : EVENTHANDLER: #<Umbra::Field:0x00007f8a1a8c54a0> called EventHandler firehander name, CHANGE
+D, [2019-09-04T16:03:02.936404 #13184] DEBUG -- : handled inside Form 103 from #<Umbra::Field:0x00007f8a1a8c54a0> got 0  
+D, [2019-09-04T16:03:02.936450 #13184] DEBUG -- :  form before repaint  , , ret 
+D, [2019-09-04T16:03:02.936492 #13184] DEBUG -- :  form repaint:,  , r 3 c 27 
+D, [2019-09-04T16:03:02.936565 #13184] DEBUG -- : repaint FIELD: name, r:3 c:25,wid:35,maxlen: 35,pcol:0,  true st: HIGHLIGHTED 

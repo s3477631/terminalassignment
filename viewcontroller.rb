@@ -100,29 +100,27 @@ begin
   form.select_first_field
   win.wrefresh
 
-  
-  
   y = x = 1
+
   while (ch = win.getkey) != FFI::NCurses::KEY_CTRL_Q
-    while (input = win.getkey) == FFI::NCurses::KEY_RETURN
-      form.handle_key input
-      win.destroy
-      FFI::NCurses.endwin
-      begin
-        include Umbra
-        init_curses
-        win = Window.new
-        win.printstring(10,10, "Hello World!");
-        win.wrefresh
-        win.getchar
-      ensure
-        win.destroy
-        FFI::NCurses.endwin
-      end
-  end
-    next if ch == -1
+
     begin
       form.handle_key ch
+
+      if ch == FFI::NCurses::KEY_RETURN
+    begin
+    win = Window.new
+    win.printstring(10,10, "Hello World!");
+    win.wrefresh
+   win.getchar
+    ensure
+    win.destroy
+    FFI::NCurses.endwin
+    exit
+    end
+    end
+
+
     rescue => e
       _alert(e.to_s)
       $log.error e
@@ -131,6 +129,7 @@ begin
     end
     win.wrefresh
   end
+  
 rescue => e
   win.destroy if win
   FFI::NCurses.endwin
@@ -147,3 +146,4 @@ ensure
     puts e.backtrace.join("\n")
   end
 end
+

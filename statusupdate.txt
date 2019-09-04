@@ -1,0 +1,5 @@
+Wednesday 3.10pm 
+
+I spent most of today and last night refactoring a form based ontop of the curses library. 
+It feels like an uphill battle - but I can see the overall efficiency gains closer to the end of the project. 
+- textboxes are working and user input: the return button can change user views by firstly destroying our view and then reinstantiating a different one.

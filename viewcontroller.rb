@@ -22,8 +22,8 @@ include Userprofile
 include Startpage
 
 
-   displaystartpage
-#    if win.getkey == FFI::NCurses::KEY_UP
-#     destroystartpage
-#     setuserprofile
-#    end
+  #  displaystartpage
+    
+#      destroystartpage
+   setupuserprofile
+#     end

@@ -6,7 +6,7 @@ module Userprofile
   FFI::NCurses.init_pair(12,  COLOR_WHITE, FFI::NCurses::COLOR_MAGENTA)
   win = Window.new
   #statusline(win, " "*(win.width-0), 0)
-  statusline(win, "Ctrl+Q:Close |Enter:Save |Left: Diet Plan |Right: Exercise Plan", 10)
+  statusline(win, "ctrl+Q:Close |enter:Save |ctrl+D:Diet Plan |ctrl+K:Exercise Plan", 10)
   name = ''
   dob = ''
   weight = ''
@@ -112,7 +112,7 @@ module Userprofile
       if ch == FFI::NCurses::KEY_RETURN && "#{dob}" != ''
        
         
-    def destroyuserprofile 
+    begin   
         
     win = Window.new
     win.printstring(10,10, "Thank you #{name}! your user profile has been created!");

@@ -13,3 +13,12 @@ Ive re-written an example gui - however, it could be further abstracted to a cla
 I may still do that - at this point each window is inside a module which is called from viewcontroller 
 I could further define textboxes and labels and so forth and truly multi-thread. 
 However, I will focus on multi-threading the data to be manipulated and leave the user interface for now
+
+
+Thursday 3.26pm
+
+getting closer to a finalised product - finally realised the true utility of the program: users could set 
+USER_PROFILES directory to a networked drive with permissions set to read/write - this would allow users 
+connected to the network to access/view/update/delete any of the details within their profile - users could
+also set read/write permissions utilising the button toggle feature connected to a switch statement that 
+interfaces with the directory read/write permissions (to prevent any random user from accessing their profile)

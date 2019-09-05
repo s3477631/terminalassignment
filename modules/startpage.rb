@@ -1,34 +1,25 @@
 module Startpage
     def displaystartpage
+        require 'umbra'
+        require 'umbra/label'
+        require 'umbra/listbox'
+        require 'umbra/textbox'
+        require 'umbra/togglebutton'
+        require 'umbra/box'
+        require 'rubygems'
+        require "active_support/all"
+        require 'time_difference'
+        require 'date'
+        require_relative 'startview'
+        require_relative 'bottombar'
+        include Startview
+        include Bottombar
         include Umbra
-        init_curses
         startup
-        FFI::NCurses.init_pair(12,  COLOR_WHITE, FFI::NCurses::COLOR_MAGENTA)
-        win = Window.new
-        statusline(win, "Ctrl+Q:Close |Enter:Save |Left: Diet Plan |Right: Exercise Plan", 10)
-        title = Label.new( :text => "Setup User Profile", :row => 0, :col => 0 , :width => FFI::NCurses.COLS-1, 
-            :justify => :center, :color_pair => CP_GREEN)
-        form = Form.new win
-        form.add_widget title
-     
-
-        while (ch = win.getkey) != FFI::NCurses::KEY_CTRL_Q
-
-            begin
-              form.handle_key ch
-        
-              if win.getkey == FFI::NCurses::KEY_RETURN
-                
-          def destroystartpage
-                
-             win.destroy
-             FFI::NCurses.endwin
-             exit
-
-          
+        def statusline win, str, column = 1
+          # LINES-2 prints on second last line so that box can be seen
+          win.printstring( FFI::NCurses.LINES-2, column, str, 6, REVERSE)
         end
-        end
-    end
-end
-end
+        mainvisual 
+    end        
 end

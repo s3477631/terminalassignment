@@ -37,23 +37,16 @@ class Windowinstancer
         bbox.flow  createnewbtn, viewdietbtn, viewexercisesbtn
         form.add_widget createnewbtn, viewdietbtn, viewexercisesbtn
         form.pack
-
         form.select_first_field
         win.wrefresh    
         y = x = 1
-      
         createnewbtn.bind_event(:PRESS) do |f|
-            
             mb = MessageBox.new title: "Please Enter Personal Information", width: 80 do
                 add LabeledField.new label:"Name:",text: "John Smith", col: 15, color_pair: CP_GREEN, attr: REVERSE
                 add LabeledField.new label:"Weight(kg):", name:"weight", text:"120", col: 15, color_pair: CP_GREEN, attr: REVERSE
                 add LabeledField.new label:"Height(m):", name:"height", text:"1.70", maxlen: 70, col: 15, color_pair: CP_GREEN, attr: REVERSE
-                add LabeledField.new label:"DOB:", name:"dobt", text:"2019-12-31", maxlen: 70, col: 15, color_pair: CP_GREEN, attr: REVERSE
-            
-           
+                add LabeledField.new label:"DOB:", name:"dobt", text:"2019-12-31", maxlen: 70, col: 15, color_pair: CP_GREEN, attr: REVERSE     
             end
-            
-
               mb.run
          end
 

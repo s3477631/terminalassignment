@@ -41,23 +41,40 @@ class Windowinstancer
         form.select_first_field
         win.wrefresh    
         y = x = 1
-       
+      
         createnewbtn.bind_event(:PRESS) do |f|
+            
             mb = MessageBox.new title: "Please Enter Personal Information", width: 80 do
                 add LabeledField.new label:"Name:",text: "John Smith", col: 15, color_pair: CP_GREEN, attr: REVERSE
                 add LabeledField.new label:"Weight(kg):", name:"weight", text:"120", col: 15, color_pair: CP_GREEN, attr: REVERSE
                 add LabeledField.new label:"Height(m):", name:"height", text:"1.70", maxlen: 70, col: 15, color_pair: CP_GREEN, attr: REVERSE
                 add LabeledField.new label:"DOB:", name:"dobt", text:"2019-12-31", maxlen: 70, col: 15, color_pair: CP_GREEN, attr: REVERSE
+            
+           
             end
+            
+
               mb.run
          end
+
+         
+         
             
         viewdietbtn.bind_event(:PRESS) do |f|
-            mb = MessageBox.new title: "Nutritional log" do
-               "hey"
-              end
-              mb.run
+           btnEtr = Button.new text: "View Diet" , row: 8, col: 30
+            mb = MessageBox.new title: "Nutritional log", buttons: nil, width: 80 do
+            add btnEtr
+            btnEtr.bind_event(:PRESS) do |f|
+                array = File.read($0).split("\n")
+                mb = MessageBox.new title: "#{array[0]}", width: 80 do
+                end
+                mb.run
+             end
+        end
+        mb.run
                  end
+
+                
          
 #         createnewbtn.command do 
 #     #    def self.addform

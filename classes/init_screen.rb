@@ -49,10 +49,6 @@ class Windowinstancer
             end
               mb.run
          end
-
-         
-         
-            
         viewdietbtn.bind_event(:PRESS) do |f|
            btnEtr = Button.new text: "View Diet" , row: 8, col: 30
             mb = MessageBox.new title: "Nutritional log", buttons: nil, width: 80 do
@@ -68,9 +64,6 @@ class Windowinstancer
         end
         mb.run
                  end
-
-                
-         
 #         createnewbtn.command do 
 #     #    def self.addform
 #         ## NEED TO PASS createnewbtn.command to a class that handles adding/destroying widgets    

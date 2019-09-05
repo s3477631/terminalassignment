@@ -1,5 +1,5 @@
 module Startpage
-    def displaystartpage
+    def self.displaystartpage
         require 'umbra'
         require 'umbra/label'
         require 'umbra/listbox'
@@ -10,16 +10,10 @@ module Startpage
         require "active_support/all"
         require 'time_difference'
         require 'date'
-        require_relative 'startview'
-        require_relative 'bottombar'
-        include Startview
-        include Bottombar
         include Umbra
-        startup
         def statusline win, str, column = 1
           # LINES-2 prints on second last line so that box can be seen
           win.printstring( FFI::NCurses.LINES-2, column, str, 6, REVERSE)
         end
-        mainvisual 
     end        
 end

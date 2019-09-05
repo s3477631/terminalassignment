@@ -1,4 +1,5 @@
 module Bottombar
+
     def mainvisual
 init_curses
 startup

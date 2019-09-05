@@ -1,49 +1,5 @@
-I, [2019-09-05T20:34:35.783733 #30654]  INFO -- : Field demo viewcontroller.rb started on 2019-09-05
-D, [2019-09-05T20:34:35.784087 #30654] DEBUG -- :  form repaint:,  , r 19 c 15 
-D, [2019-09-05T20:34:35.784126 #30654] DEBUG -- : BUTTON repaint : #<Umbra::Button:0x00007fd419391170>  r:19 c:13 , cp:, st:HIGHLIGHTED, [ Create New ]
-D, [2019-09-05T20:34:35.784167 #30654] DEBUG -- : BUTTON repaint : #<Umbra::Button:0x00007fd419390d10>  r:19 c:35 , cp:, st:NORMAL, [ View Diet ]
-D, [2019-09-05T20:34:35.784206 #30654] DEBUG -- : BUTTON repaint : #<Umbra::Button:0x00007fd4193908d8>  r:19 c:57 , cp:, st:NORMAL, [ View Exercises ]
-D, [2019-09-05T20:34:37.014258 #30654] DEBUG -- : handled inside Form 9 from #<Umbra::Button:0x00007fd419391170> got UNHANDLED  
-D, [2019-09-05T20:34:37.014365 #30654] DEBUG -- : Form setting state of  to NORMAL
-D, [2019-09-05T20:34:37.014410 #30654] DEBUG -- :  form repaint:,  , r 19 c 37 
-D, [2019-09-05T20:34:37.014449 #30654] DEBUG -- : BUTTON repaint : #<Umbra::Button:0x00007fd419391170>  r:19 c:13 , cp:, st:NORMAL, [ Create New ]
-D, [2019-09-05T20:34:37.014534 #30654] DEBUG -- : BUTTON repaint : #<Umbra::Button:0x00007fd419390d10>  r:19 c:35 , cp:, st:HIGHLIGHTED, [ View Diet ]
-D, [2019-09-05T20:34:37.014651 #30654] DEBUG -- :  form before repaint  , , ret 0
-D, [2019-09-05T20:34:37.014683 #30654] DEBUG -- :  form repaint:,  , r 19 c 37 
-D, [2019-09-05T20:34:37.392218 #30654] DEBUG -- : handled inside Form 9 from #<Umbra::Button:0x00007fd419390d10> got UNHANDLED  
-D, [2019-09-05T20:34:37.392350 #30654] DEBUG -- : Form setting state of  to NORMAL
-D, [2019-09-05T20:34:37.392379 #30654] DEBUG -- :  form repaint:,  , r 19 c 59 
-D, [2019-09-05T20:34:37.392443 #30654] DEBUG -- : BUTTON repaint : #<Umbra::Button:0x00007fd419390d10>  r:19 c:35 , cp:, st:NORMAL, [ View Diet ]
-D, [2019-09-05T20:34:37.392500 #30654] DEBUG -- : BUTTON repaint : #<Umbra::Button:0x00007fd4193908d8>  r:19 c:57 , cp:, st:HIGHLIGHTED, [ View Exercises ]
-D, [2019-09-05T20:34:37.392577 #30654] DEBUG -- :  form before repaint  , , ret 0
-D, [2019-09-05T20:34:37.392597 #30654] DEBUG -- :  form repaint:,  , r 19 c 59 
-D, [2019-09-05T20:34:41.412163 #30654] DEBUG -- : handled inside Form 260 from #<Umbra::Button:0x00007fd4193908d8> got UNHANDLED  
-D, [2019-09-05T20:34:41.412276 #30654] DEBUG -- : FORM process_key 260 got ret UNHANDLED in , flushing input 
-D, [2019-09-05T20:34:41.883389 #30654] DEBUG -- : handled inside Form 9 from #<Umbra::Button:0x00007fd4193908d8> got UNHANDLED  
-D, [2019-09-05T20:34:41.883471 #30654] DEBUG -- : Form setting state of  to NORMAL
-D, [2019-09-05T20:34:41.883541 #30654] DEBUG -- :  form repaint:,  , r 19 c 15 
-D, [2019-09-05T20:34:41.883576 #30654] DEBUG -- : BUTTON repaint : #<Umbra::Button:0x00007fd419391170>  r:19 c:13 , cp:, st:HIGHLIGHTED, [ Create New ]
-D, [2019-09-05T20:34:41.883635 #30654] DEBUG -- : BUTTON repaint : #<Umbra::Button:0x00007fd4193908d8>  r:19 c:57 , cp:, st:NORMAL, [ View Exercises ]
-D, [2019-09-05T20:34:41.883731 #30654] DEBUG -- :  form before repaint  , , ret 0
-D, [2019-09-05T20:34:41.883752 #30654] DEBUG -- :  form repaint:,  , r 19 c 15 
-D, [2019-09-05T20:34:43.416532 #30654] DEBUG -- : handled inside Form 9 from #<Umbra::Button:0x00007fd419391170> got UNHANDLED  
-D, [2019-09-05T20:34:43.416661 #30654] DEBUG -- : Form setting state of  to NORMAL
-D, [2019-09-05T20:34:43.416694 #30654] DEBUG -- :  form repaint:,  , r 19 c 37 
-D, [2019-09-05T20:34:43.416764 #30654] DEBUG -- : BUTTON repaint : #<Umbra::Button:0x00007fd419391170>  r:19 c:13 , cp:, st:NORMAL, [ Create New ]
-D, [2019-09-05T20:34:43.416822 #30654] DEBUG -- : BUTTON repaint : #<Umbra::Button:0x00007fd419390d10>  r:19 c:35 , cp:, st:HIGHLIGHTED, [ View Diet ]
-D, [2019-09-05T20:34:43.416930 #30654] DEBUG -- :  form before repaint  , , ret 0
-D, [2019-09-05T20:34:43.416950 #30654] DEBUG -- :  form repaint:,  , r 19 c 37 
-D, [2019-09-05T20:34:43.857422 #30654] DEBUG -- : handled inside Form 9 from #<Umbra::Button:0x00007fd419390d10> got UNHANDLED  
-D, [2019-09-05T20:34:43.857493 #30654] DEBUG -- : Form setting state of  to NORMAL
-D, [2019-09-05T20:34:43.857533 #30654] DEBUG -- :  form repaint:,  , r 19 c 59 
-D, [2019-09-05T20:34:43.857557 #30654] DEBUG -- : BUTTON repaint : #<Umbra::Button:0x00007fd419390d10>  r:19 c:35 , cp:, st:NORMAL, [ View Diet ]
-D, [2019-09-05T20:34:43.857607 #30654] DEBUG -- : BUTTON repaint : #<Umbra::Button:0x00007fd4193908d8>  r:19 c:57 , cp:, st:HIGHLIGHTED, [ View Exercises ]
-D, [2019-09-05T20:34:43.857680 #30654] DEBUG -- :  form before repaint  , , ret 0
-D, [2019-09-05T20:34:43.857698 #30654] DEBUG -- :  form repaint:,  , r 19 c 59 
-D, [2019-09-05T20:34:44.069631 #30654] DEBUG -- : handled inside Form 9 from #<Umbra::Button:0x00007fd4193908d8> got UNHANDLED  
-D, [2019-09-05T20:34:44.069717 #30654] DEBUG -- : Form setting state of  to NORMAL
-D, [2019-09-05T20:34:44.069748 #30654] DEBUG -- :  form repaint:,  , r 19 c 15 
-D, [2019-09-05T20:34:44.069773 #30654] DEBUG -- : BUTTON repaint : #<Umbra::Button:0x00007fd419391170>  r:19 c:13 , cp:, st:HIGHLIGHTED, [ Create New ]
-D, [2019-09-05T20:34:44.069880 #30654] DEBUG -- : BUTTON repaint : #<Umbra::Button:0x00007fd4193908d8>  r:19 c:57 , cp:, st:NORMAL, [ View Exercises ]
-D, [2019-09-05T20:34:44.069971 #30654] DEBUG -- :  form before repaint  , , ret 0
-D, [2019-09-05T20:34:44.069993 #30654] DEBUG -- :  form repaint:,  , r 19 c 15 
+I, [2019-09-05T23:18:27.757578 #34649]  INFO -- : Field demo viewcontroller.rb started on 2019-09-05
+D, [2019-09-05T23:18:27.757929 #34649] DEBUG -- :  form repaint:,  , r 20 c 4 
+D, [2019-09-05T23:18:27.757966 #34649] DEBUG -- : BUTTON repaint : #<Umbra::Button:0x00007fad4830fa00>  r:20 c:2 , cp:, st:HIGHLIGHTED, [ Create New ]
+D, [2019-09-05T23:18:27.758004 #34649] DEBUG -- : BUTTON repaint : #<Umbra::Button:0x00007fad4830f528>  r:20 c:17 , cp:, st:NORMAL, [ View Diet ]
+D, [2019-09-05T23:18:27.758036 #34649] DEBUG -- : BUTTON repaint : #<Umbra::Button:0x00007fad4830efd8>  r:20 c:32 , cp:, st:NORMAL, [ View Exercises ]

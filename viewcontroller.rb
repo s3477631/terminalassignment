@@ -5,7 +5,7 @@ require_relative "./modules/statusline"
 require_relative "./modules/userprofile"
 require_relative "./modules/startpage"
 require_relative './modules/startview'
-
+require_relative './classes/init_screen'
 
 include Startview
 include Footer 
@@ -15,9 +15,8 @@ include Statusline
 include Userprofile
 include Startpage
 
-displaystartpage
 
-
+Windowinstancer.new(1, 1, 1)
 
 
     

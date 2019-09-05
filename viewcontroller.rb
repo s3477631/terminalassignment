@@ -19,6 +19,7 @@ include Startpage
 Windowinstancer.new(1, 1, 1)
 
 
+
     
     
 #      destroystartpage

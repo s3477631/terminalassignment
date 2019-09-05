@@ -1,6 +1,7 @@
 module Userprofile
     def setupuserprofile
   include Umbra
+  require 'umbra/textbox'
   init_curses
   startup
   FFI::NCurses.init_pair(12,  COLOR_WHITE, FFI::NCurses::COLOR_MAGENTA)
@@ -14,8 +15,6 @@ module Userprofile
   title = Label.new( :text => "Setup User Profile", :row => 0, :col => 0 , :width => FFI::NCurses.COLS-1, 
                     :justify => :center, :color_pair => CP_BLUE)
 
-  
-  form = Form.new win
   form.add_widget title
 
   labels = ["Name:", "Weight(kg):", "Height(m):","Dob(yyyy-mm-dd):"]

@@ -1,6 +1,6 @@
 module Alert
 def _alert str 
-    win = create_footer_window
+    win = _create_window
     FFI::NCurses.init_pair(12,  COLOR_WHITE, FFI::NCurses::RED)
     cp = create_color_pair(COLOR_RED, COLOR_WHITE)
     win.wbkgd(FFI::NCurses.COLOR_PAIR(cp)) # white on red, defined here

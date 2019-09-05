@@ -23,9 +23,10 @@ class Windowinstancer
         win.box
         form = Form.new win
         col = 1
-        str = " Press Ctrl + Q to EXIT "
         statusline(win, " "*(win.width-0), 0)
-        win.printstring( FFI::NCurses.LINES-2, col, str, 6, REVERSE)
+        str = " Welcome to your Personal Fitness & Nutrition Manager "
+        win.title str
+        win.printstring( FFI::NCurses.LINES-2, col, " Press Ctrl + Q to EXIT ", 6, REVERSE)
         createnewbtn = Button.new text: "Create New", row: 10, col: 1
         viewdietbtn = Button.new text: "View Diet" , row: 10, col: 30
         viewexercisesbtn = Button.new text: "View Exercises" , row: 80, col: 50
@@ -39,9 +40,53 @@ class Windowinstancer
         form.select_first_field
         win.wrefresh    
         y = x = 1
+        createnewbtn.command do 
+       
+        ## NEED TO PASS createnewbtn.command to a class that handles adding/destroying widgets    
+            title = Label.new( :text => "Setup User Profile", :row => 2, :col => 0 , :width => FFI::NCurses.COLS-1, 
+                              :justify => :center, :color_pair => CP_BLUE)
+            form.add_widget title
+            labels = ["Name:", "Weight(kg):", "Height(m):","Dob(yyyy-mm-dd):"]
+            labs = []        
+            row = 3
+            col = 5
+            labels.each_with_index {|lab, ix| 
+            w = Label.new( :text => lab, :row => row, :col => col , :width => 20)
+            labs << w
+            row += 4
+            w.color_pair = CP_RED
+            w.justify = :right
+            w.attr = FFI::NCurses::A_BOLD
+            form.add_widget w
+          }
+          
+    
+#     fielder = Field.new( :name => lab, :row => row, :col => col , :width => 35)
+#     fielder.color_pair = CP_MAGENTA
+#     fielder.attr = FFI::NCurses::A_REVERSE
+#     fielder.highlight_color_pair = CP_WHITE
+#     fielder.highlight_attr = REVERSE
+#     fielder.null_allowed = false
+#     form.add_widget fielder
+#   }
+          end
+
+          viewdietbtn.command do
+         
+            title = Label.new( :text => "View Diet", :row => 2, :col => 0 , :width => FFI::NCurses.COLS-1, 
+                :justify => :center, :color_pair => CP_BLUE)
+                form.add_widget title
+                form.repaint
+                 win.wrefresh
+                 
+          end
+
+
+
 while (ch = win.getkey) != FFI::NCurses::KEY_CTRL_Q
         begin
         form.handle_key ch
+        
         rescue => e
         puts e
         puts e.backtrace.join("\n")

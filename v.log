@@ -1,5 +1,69 @@
-I, [2019-09-05T23:18:27.757578 #34649]  INFO -- : Field demo viewcontroller.rb started on 2019-09-05
-D, [2019-09-05T23:18:27.757929 #34649] DEBUG -- :  form repaint:,  , r 20 c 4 
-D, [2019-09-05T23:18:27.757966 #34649] DEBUG -- : BUTTON repaint : #<Umbra::Button:0x00007fad4830fa00>  r:20 c:2 , cp:, st:HIGHLIGHTED, [ Create New ]
-D, [2019-09-05T23:18:27.758004 #34649] DEBUG -- : BUTTON repaint : #<Umbra::Button:0x00007fad4830f528>  r:20 c:17 , cp:, st:NORMAL, [ View Diet ]
-D, [2019-09-05T23:18:27.758036 #34649] DEBUG -- : BUTTON repaint : #<Umbra::Button:0x00007fad4830efd8>  r:20 c:32 , cp:, st:NORMAL, [ View Exercises ]
+I, [2019-09-06T02:41:43.789324 #38562]  INFO -- : Field demo viewcontroller.rb started on 2019-09-06
+D, [2019-09-06T02:41:43.789749 #38562] DEBUG -- :  form repaint:,  , r 20 c 4 
+D, [2019-09-06T02:41:43.789787 #38562] DEBUG -- : BUTTON repaint : #<Umbra::Button:0x00007fd8232ec608>  r:20 c:2 , cp:, st:HIGHLIGHTED, [ Create New ]
+D, [2019-09-06T02:41:43.789827 #38562] DEBUG -- : BUTTON repaint : #<Umbra::Button:0x00007fd8232ec108>  r:20 c:17 , cp:, st:NORMAL, [ View Diet ]
+D, [2019-09-06T02:41:43.789859 #38562] DEBUG -- : BUTTON repaint : #<Umbra::Button:0x00007fd8232e7d38>  r:20 c:32 , cp:, st:NORMAL, [ View Exercises ]
+D, [2019-09-06T02:41:44.954629 #38562] DEBUG -- : handled inside Form 9 from #<Umbra::Button:0x00007fd8232ec608> got UNHANDLED  
+D, [2019-09-06T02:41:44.954733 #38562] DEBUG -- : Form setting state of  to NORMAL
+D, [2019-09-06T02:41:44.954791 #38562] DEBUG -- :  form repaint:,  , r 20 c 19 
+D, [2019-09-06T02:41:44.954827 #38562] DEBUG -- : BUTTON repaint : #<Umbra::Button:0x00007fd8232ec608>  r:20 c:2 , cp:, st:NORMAL, [ Create New ]
+D, [2019-09-06T02:41:44.954896 #38562] DEBUG -- : BUTTON repaint : #<Umbra::Button:0x00007fd8232ec108>  r:20 c:17 , cp:, st:HIGHLIGHTED, [ View Diet ]
+D, [2019-09-06T02:41:44.955077 #38562] DEBUG -- :  form before repaint  , , ret 0
+D, [2019-09-06T02:41:44.955141 #38562] DEBUG -- :  form repaint:,  , r 20 c 19 
+D, [2019-09-06T02:41:45.299751 #38562] DEBUG -- : handled inside Form 9 from #<Umbra::Button:0x00007fd8232ec108> got UNHANDLED  
+D, [2019-09-06T02:41:45.299830 #38562] DEBUG -- : Form setting state of  to NORMAL
+D, [2019-09-06T02:41:45.299864 #38562] DEBUG -- :  form repaint:,  , r 20 c 34 
+D, [2019-09-06T02:41:45.299895 #38562] DEBUG -- : BUTTON repaint : #<Umbra::Button:0x00007fd8232ec108>  r:20 c:17 , cp:, st:NORMAL, [ View Diet ]
+D, [2019-09-06T02:41:45.299955 #38562] DEBUG -- : BUTTON repaint : #<Umbra::Button:0x00007fd8232e7d38>  r:20 c:32 , cp:, st:HIGHLIGHTED, [ View Exercises ]
+D, [2019-09-06T02:41:45.300042 #38562] DEBUG -- :  form before repaint  , , ret 0
+D, [2019-09-06T02:41:45.300067 #38562] DEBUG -- :  form repaint:,  , r 20 c 34 
+D, [2019-09-06T02:41:45.605585 #38562] DEBUG -- : handled inside Form 9 from #<Umbra::Button:0x00007fd8232e7d38> got UNHANDLED  
+D, [2019-09-06T02:41:45.605700 #38562] DEBUG -- : Form setting state of  to NORMAL
+D, [2019-09-06T02:41:45.605763 #38562] DEBUG -- :  form repaint:,  , r 20 c 4 
+D, [2019-09-06T02:41:45.605807 #38562] DEBUG -- : BUTTON repaint : #<Umbra::Button:0x00007fd8232ec608>  r:20 c:2 , cp:, st:HIGHLIGHTED, [ Create New ]
+D, [2019-09-06T02:41:45.605870 #38562] DEBUG -- : BUTTON repaint : #<Umbra::Button:0x00007fd8232e7d38>  r:20 c:32 , cp:, st:NORMAL, [ View Exercises ]
+D, [2019-09-06T02:41:45.606007 #38562] DEBUG -- :  form before repaint  , , ret 0
+D, [2019-09-06T02:41:45.606033 #38562] DEBUG -- :  form repaint:,  , r 20 c 4 
+D, [2019-09-06T02:41:45.932766 #38562] DEBUG -- : inside def fire_handler evt:PRESS, o: Umbra::EventHandler::ActionEvent
+D, [2019-09-06T02:41:45.932842 #38562] DEBUG -- : EVENTHANDLER: #<Umbra::Button:0x00007fd8232ec608> called EventHandler firehander , PRESS
+E, [2019-09-06T02:41:45.932943 #38562] ERROR -- : ======= Error ERROR in block event #<Umbra::Button:0x00007fd8232ec608>:  PRESS
+E, [2019-09-06T02:41:45.932964 #38562] ERROR -- : undefined local variable or method `w' for #<Windowinstancer:0x00007fd8232eee08>
+Did you mean?  win
+               warn
+               @w (NameError)
+/Users/devinreeks/terminalassignment/classes/init_screen.rb:54:in `block (2 levels) in initialize'
+/Users/devinreeks/terminalassignment/classes/init_screen.rb:52:in `each'
+/Users/devinreeks/terminalassignment/classes/init_screen.rb:52:in `each_with_index'
+/Users/devinreeks/terminalassignment/classes/init_screen.rb:52:in `block in initialize'
+/Library/Ruby/Gems/2.3.0/gems/ncumbra-0.1.4/lib/umbra/eventhandler.rb:65:in `block in fire_handler'
+/Library/Ruby/Gems/2.3.0/gems/ncumbra-0.1.4/lib/umbra/eventhandler.rb:60:in `each'
+/Library/Ruby/Gems/2.3.0/gems/ncumbra-0.1.4/lib/umbra/eventhandler.rb:60:in `each_with_index'
+/Library/Ruby/Gems/2.3.0/gems/ncumbra-0.1.4/lib/umbra/eventhandler.rb:60:in `fire_handler'
+/Library/Ruby/Gems/2.3.0/gems/ncumbra-0.1.4/lib/umbra/button.rb:101:in `fire'
+/Library/Ruby/Gems/2.3.0/gems/ncumbra-0.1.4/lib/umbra/button.rb:110:in `block in map_keys'
+/Library/Ruby/Gems/2.3.0/gems/ncumbra-0.1.4/lib/umbra/keymappinghandler.rb:91:in `_process_key'
+/Library/Ruby/Gems/2.3.0/gems/ncumbra-0.1.4/lib/umbra/keymappinghandler.rb:71:in `process_key'
+/Library/Ruby/Gems/2.3.0/gems/ncumbra-0.1.4/lib/umbra/widget.rb:235:in `handle_key'
+/Library/Ruby/Gems/2.3.0/gems/ncumbra-0.1.4/lib/umbra/button.rb:115:in `handle_key'
+/Library/Ruby/Gems/2.3.0/gems/ncumbra-0.1.4/lib/umbra/form.rb:403:in `handle_key'
+/Users/devinreeks/terminalassignment/classes/init_screen.rb:87:in `initialize'
+viewcontroller.rb:19:in `new'
+viewcontroller.rb:19:in `<main>'
+E, [2019-09-06T02:41:45.933973 #38562] ERROR -- : /Users/devinreeks/terminalassignment/classes/init_screen.rb:54:in `block (2 levels) in initialize'
+/Users/devinreeks/terminalassignment/classes/init_screen.rb:52:in `each'
+/Users/devinreeks/terminalassignment/classes/init_screen.rb:52:in `each_with_index'
+/Users/devinreeks/terminalassignment/classes/init_screen.rb:52:in `block in initialize'
+/Library/Ruby/Gems/2.3.0/gems/ncumbra-0.1.4/lib/umbra/eventhandler.rb:65:in `block in fire_handler'
+/Library/Ruby/Gems/2.3.0/gems/ncumbra-0.1.4/lib/umbra/eventhandler.rb:60:in `each'
+/Library/Ruby/Gems/2.3.0/gems/ncumbra-0.1.4/lib/umbra/eventhandler.rb:60:in `each_with_index'
+/Library/Ruby/Gems/2.3.0/gems/ncumbra-0.1.4/lib/umbra/eventhandler.rb:60:in `fire_handler'
+/Library/Ruby/Gems/2.3.0/gems/ncumbra-0.1.4/lib/umbra/button.rb:101:in `fire'
+/Library/Ruby/Gems/2.3.0/gems/ncumbra-0.1.4/lib/umbra/button.rb:110:in `block in map_keys'
+/Library/Ruby/Gems/2.3.0/gems/ncumbra-0.1.4/lib/umbra/keymappinghandler.rb:91:in `_process_key'
+/Library/Ruby/Gems/2.3.0/gems/ncumbra-0.1.4/lib/umbra/keymappinghandler.rb:71:in `process_key'
+/Library/Ruby/Gems/2.3.0/gems/ncumbra-0.1.4/lib/umbra/widget.rb:235:in `handle_key'
+/Library/Ruby/Gems/2.3.0/gems/ncumbra-0.1.4/lib/umbra/button.rb:115:in `handle_key'
+/Library/Ruby/Gems/2.3.0/gems/ncumbra-0.1.4/lib/umbra/form.rb:403:in `handle_key'
+/Users/devinreeks/terminalassignment/classes/init_screen.rb:87:in `initialize'
+viewcontroller.rb:19:in `new'
+viewcontroller.rb:19:in `<main>'

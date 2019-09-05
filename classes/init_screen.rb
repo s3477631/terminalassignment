@@ -65,8 +65,10 @@ class Windowinstancer
             mb = MessageBox.new title: "Nutritional log", buttons: nil, width: 80 do
             add btnEtr
             btnEtr.bind_event(:PRESS) do |f|
-                array = File.read($0).split("\n")
-                mb = MessageBox.new title: "#{array[0]}", width: 80 do
+                array = File.read('./USER_PROFILES/Devin/record.txt').split("\n")
+                mb = MessageBox.new title: "Last Record", width: 80 do
+                add    Label.new( :text => "#{array[0]}", :row => 0, :col => 0 , :width => FFI::NCurses.COLS-1, 
+                        :justify => :center, :color_pair => CP_BLACK)
                 end
                 mb.run
              end

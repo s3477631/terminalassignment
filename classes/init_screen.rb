@@ -5,7 +5,10 @@ class Windowinstancer
     require 'umbra/textbox'
     require 'umbra/togglebutton'
     require 'umbra/box'
+    require 'umbra/label'
     require 'rubygems'
+    require 'umbra/labeledfield'
+    require 'umbra/messagebox'
     require "active_support/all"
     require 'time_difference'
     require 'date'
@@ -14,8 +17,8 @@ class Windowinstancer
     include Umbra
     include Startup
     include Statusline
-    attr_accessor :createnewbtn
-    def initialize(x, y, str)
+    attr_accessor :tedo
+    def groundzero(x, y, str)
         init_curses
         startup
         FFI::NCurses.init_pair(12,  COLOR_WHITE, FFI::NCurses::COLOR_MAGENTA)
@@ -34,50 +37,65 @@ class Windowinstancer
         bbox.flow  createnewbtn, viewdietbtn, viewexercisesbtn
         form.add_widget createnewbtn, viewdietbtn, viewexercisesbtn
         form.pack
-        form.select_first_field
-        form.add_widget createnewbtn, viewdietbtn, viewexercisesbtn
-        form.pack
+
         form.select_first_field
         win.wrefresh    
         y = x = 1
-        createnewbtn.command do 
        
-        ## NEED TO PASS createnewbtn.command to a class that handles adding/destroying widgets    
-            title = Label.new( :text => "Setup User Profile", :row => 2, :col => 0 , :width => FFI::NCurses.COLS-1, 
-                              :justify => :center, :color_pair => CP_BLUE)
-            form.add_widget title
-            labels = ["Name:", "Weight(kg):", "Height(m):","Dob(yyyy-mm-dd):"]
-            labs = []        
-            row = 3
-            col = 5
-            labels.each_with_index {|lab, ix| 
-            w = Label.new( :text => lab, :row => row, :col => col , :width => 20)
-            labs << w
-            row += 4
-            w.color_pair = CP_RED
-            w.justify = :right
-            w.attr = FFI::NCurses::A_BOLD
-            form.add_widget w
-          }
+        createnewbtn.bind_event(:PRESS) do |f|
+            mb = MessageBox.new title: "Please Enter Personal Information", width: 80 do
+                add LabeledField.new label:"Name:",text: "John Smith", col: 15, color_pair: CP_GREEN, attr: REVERSE
+                add LabeledField.new label:"Weight(kg):", name:"weight", text:"120", col: 15, color_pair: CP_GREEN, attr: REVERSE
+                add LabeledField.new label:"Height(m):", name:"height", text:"1.70", maxlen: 70, col: 15, color_pair: CP_GREEN, attr: REVERSE
+                add LabeledField.new label:"DOB:", name:"dobt", text:"2019-12-31", maxlen: 70, col: 15, color_pair: CP_GREEN, attr: REVERSE
+            end
+              mb.run
+         end
+            
+        viewdietbtn.bind_event(:PRESS) do |f|
+            mb = MessageBox.new title: "Nutritional log" do
+               "hey"
+              end
+              mb.run
+                 end
+         
+#         createnewbtn.command do 
+#     #    def self.addform
+#         ## NEED TO PASS createnewbtn.command to a class that handles adding/destroying widgets    
+#         labels = ["Name:", "Age:", "Address:","Mobile No.:", "Email Id:","Hobbies:"]
+#         names = ["name", "age", "address","mobile", "email","hobbies"]
+       
+#         row = 3
+#         col = 30
+#         names.each_with_index {|lab, ix| 
+#           w = LabeledField.new( :name => lab, :row => row, :col => col , :width => 50, label: labels[ix],
+#                                :label_highlight_attr => BOLD
+#                               )
+#           row += 2
+#           w.color_pair = CP_CYAN
+#           w.attr = FFI::NCurses::A_REVERSE
+#           w.highlight_color_pair = CP_YELLOW
+#           w.highlight_attr = REVERSE
+#           w.null_allowed = true
+#           form.add_widget w
+#           form
+#         }
           
     
-#     fielder = Field.new( :name => lab, :row => row, :col => col , :width => 35)
-#     fielder.color_pair = CP_MAGENTA
-#     fielder.attr = FFI::NCurses::A_REVERSE
-#     fielder.highlight_color_pair = CP_WHITE
-#     fielder.highlight_attr = REVERSE
-#     fielder.null_allowed = false
-#     form.add_widget fielder
-#   }
-          end
+# #     fielder = Field.new( :name => lab, :row => row, :col => col , :width => 35)
+# #     fielder.color_pair = CP_MAGENTA
+# #     fielder.attr = FFI::NCurses::A_REVERSE
+# #     fielder.highlight_color_pair = CP_WHITE
+# #     fielder.highlight_attr = REVERSE
+# #     fielder.null_allowed = false
+# #     form.add_widget fielder
+# #   }
+#     end
+   
 
           viewdietbtn.command do
-         
-            title = Label.new( :text => "View Diet", :row => 2, :col => 0 , :width => FFI::NCurses.COLS-1, 
-                :justify => :center, :color_pair => CP_BLUE)
-                form.add_widget title
-                form.repaint
-                 win.wrefresh
+           
+           
                  
           end
 

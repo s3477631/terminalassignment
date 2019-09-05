@@ -16,7 +16,7 @@ include Userprofile
 include Startpage
 
 
-Windowinstancer.new(1, 1, 1)
+Windowinstancer.new.groundzero(1,1,1) 
 
 
 

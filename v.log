@@ -1,5 +1,106 @@
-I, [2019-09-06T09:57:33.934709 #45835]  INFO -- : Field demo viewcontroller.rb started on 2019-09-06
-D, [2019-09-06T09:57:33.935120 #45835] DEBUG -- :  form repaint:,  , r 20 c 4 
-D, [2019-09-06T09:57:33.935162 #45835] DEBUG -- : BUTTON repaint : #<Umbra::Button:0x00007fbcb8197ae0>  r:20 c:2 , cp:, st:HIGHLIGHTED, [ Create New ]
-D, [2019-09-06T09:57:33.935204 #45835] DEBUG -- : BUTTON repaint : #<Umbra::Button:0x00007fbcb81972c0>  r:20 c:17 , cp:, st:NORMAL, [ View Diet ]
-D, [2019-09-06T09:57:33.935236 #45835] DEBUG -- : BUTTON repaint : #<Umbra::Button:0x00007fbcb8196e38>  r:20 c:32 , cp:, st:NORMAL, [ View Exercises ]
+I, [2019-09-06T10:14:17.437522 #46022]  INFO -- : Field demo viewcontroller.rb started on 2019-09-06
+D, [2019-09-06T10:14:17.437940 #46022] DEBUG -- :  form repaint:,  , r 20 c 4 
+D, [2019-09-06T10:14:17.438045 #46022] DEBUG -- : BUTTON repaint : #<Umbra::Button:0x00007ffd4e417c30>  r:20 c:2 , cp:, st:HIGHLIGHTED, [ Create New ]
+D, [2019-09-06T10:14:17.438112 #46022] DEBUG -- : BUTTON repaint : #<Umbra::Button:0x00007ffd4e417208>  r:20 c:17 , cp:, st:NORMAL, [ View Diet ]
+D, [2019-09-06T10:14:17.438153 #46022] DEBUG -- : BUTTON repaint : #<Umbra::Button:0x00007ffd4e416d58>  r:20 c:32 , cp:, st:NORMAL, [ View Exercises ]
+D, [2019-09-06T10:14:18.627081 #46022] DEBUG -- : handled inside Form 9 from #<Umbra::Button:0x00007ffd4e417c30> got UNHANDLED  
+D, [2019-09-06T10:14:18.627200 #46022] DEBUG -- : Form setting state of  to NORMAL
+D, [2019-09-06T10:14:18.627260 #46022] DEBUG -- :  form repaint:,  , r 20 c 19 
+D, [2019-09-06T10:14:18.627344 #46022] DEBUG -- : BUTTON repaint : #<Umbra::Button:0x00007ffd4e417c30>  r:20 c:2 , cp:, st:NORMAL, [ Create New ]
+D, [2019-09-06T10:14:18.627440 #46022] DEBUG -- : BUTTON repaint : #<Umbra::Button:0x00007ffd4e417208>  r:20 c:17 , cp:, st:HIGHLIGHTED, [ View Diet ]
+D, [2019-09-06T10:14:18.627574 #46022] DEBUG -- :  form before repaint  , , ret 0
+D, [2019-09-06T10:14:18.627613 #46022] DEBUG -- :  form repaint:,  , r 20 c 19 
+D, [2019-09-06T10:14:18.913606 #46022] DEBUG -- : inside def fire_handler evt:PRESS, o: Umbra::EventHandler::ActionEvent
+D, [2019-09-06T10:14:18.913703 #46022] DEBUG -- : EVENTHANDLER: #<Umbra::Button:0x00007ffd4e417208> called EventHandler firehander , PRESS
+W, [2019-09-06T10:14:18.913783 #46022]  WARN -- : Window is nil in form.add_widget
+D, [2019-09-06T10:14:18.913830 #46022] DEBUG -- :   MESSAGEBOX _create_window h: w:80 r:0 c:0 
+D, [2019-09-06T10:14:18.913849 #46022] DEBUG -- :   MESSAGEBOX _create_window h:15 w:47 
+D, [2019-09-06T10:14:18.913867 #46022] DEBUG -- :   MESSAGEBOX _create_window h:15 w:80 r:0 c:0 
+D, [2019-09-06T10:14:18.913888 #46022] DEBUG -- :   MESSAGEBOX _create_window h:15 w:80 r:4 c:0 
+D, [2019-09-06T10:14:18.913943 #46022] DEBUG -- :  MESSAGE BOX bg: , co: , colorpair:0
+D, [2019-09-06T10:14:18.914107 #46022] DEBUG -- :  form repaint:,  , r 0 c 0 
+D, [2019-09-06T10:14:18.914169 #46022] DEBUG -- : BUTTON repaint : #<Umbra::Button:0x00007ffd4d846500>  r:9 c:32 , cp:, st:NORMAL, [ View Diet ]
+D, [2019-09-06T10:14:18.914237 #46022] DEBUG -- :  form repaint:,  , r 9 c 34 
+D, [2019-09-06T10:14:18.914267 #46022] DEBUG -- : BUTTON repaint : #<Umbra::Button:0x00007ffd4d846500>  r:9 c:32 , cp:, st:HIGHLIGHTED, [ View Diet ]
+D, [2019-09-06T10:18:51.893324 #46022] DEBUG -- : inside def fire_handler evt:PRESS, o: Umbra::EventHandler::ActionEvent
+D, [2019-09-06T10:18:51.900500 #46022] DEBUG -- : EVENTHANDLER: #<Umbra::Button:0x00007ffd4d846500> called EventHandler firehander , PRESS
+W, [2019-09-06T10:18:51.909978 #46022]  WARN -- : Window is nil in form.add_widget
+D, [2019-09-06T10:18:51.910891 #46022] DEBUG -- :   MESSAGEBOX _create_window h: w:80 r:0 c:0 
+D, [2019-09-06T10:18:51.910963 #46022] DEBUG -- :   MESSAGEBOX _create_window h:10 w:89 
+D, [2019-09-06T10:18:51.911076 #46022] DEBUG -- :   MESSAGEBOX _create_window h:10 w:80 r:0 c:0 
+D, [2019-09-06T10:18:51.911121 #46022] DEBUG -- :   MESSAGEBOX _create_window h:10 w:80 r:7 c:0 
+D, [2019-09-06T10:18:51.912524 #46022] DEBUG -- :  MESSAGE BOX bg: , co: , colorpair:0
+D, [2019-09-06T10:18:51.916018 #46022] DEBUG -- :  form repaint:,  , r 0 c 0 
+D, [2019-09-06T10:18:51.916176 #46022] DEBUG -- : label repaint 4 5 You last weighed: 80 kilos 
+D, [2019-09-06T10:18:51.917048 #46022] DEBUG -- : BUTTON repaint : #<Umbra::Button:0x00007ffd4d83c140>  r:7 c:32 , cp:, st:NORMAL, [ Ok ]
+D, [2019-09-06T10:18:51.917116 #46022] DEBUG -- : BUTTON repaint : #<Umbra::Button:0x00007ffd4e40fc38>  r:7 c:39 , cp:, st:NORMAL, [ Cancel ]
+D, [2019-09-06T10:18:51.917215 #46022] DEBUG -- :  form repaint:,  , r 7 c 34 
+D, [2019-09-06T10:18:51.917267 #46022] DEBUG -- : BUTTON repaint : #<Umbra::Button:0x00007ffd4d83c140>  r:7 c:32 , cp:, st:HIGHLIGHTED, [ Ok ]
+D, [2019-09-06T10:18:52.749807 #46022] DEBUG -- : inside def fire_handler evt:PRESS, o: Umbra::EventHandler::ActionEvent
+D, [2019-09-06T10:18:52.749905 #46022] DEBUG -- : EVENTHANDLER: #<Umbra::Button:0x00007ffd4d83c140> called EventHandler firehander , PRESS
+D, [2019-09-06T10:18:52.749960 #46022] DEBUG -- : MESSAGEBOX: CALLING PROGRAM BEING RETURNED: 0 
+D, [2019-09-06T10:18:52.751802 #46022] DEBUG -- : handled inside Form 32 from #<Umbra::Button:0x00007ffd4d846500> got 0  
+D, [2019-09-06T10:18:52.751861 #46022] DEBUG -- :  form before repaint  , , ret 
+D, [2019-09-06T10:18:52.751885 #46022] DEBUG -- :  form repaint:,  , r 9 c 34 
+D, [2019-09-06T10:18:53.338537 #46022] DEBUG -- : inside def fire_handler evt:PRESS, o: Umbra::EventHandler::ActionEvent
+D, [2019-09-06T10:18:53.338633 #46022] DEBUG -- : EVENTHANDLER: #<Umbra::Button:0x00007ffd4d846500> called EventHandler firehander , PRESS
+W, [2019-09-06T10:18:53.338811 #46022]  WARN -- : Window is nil in form.add_widget
+D, [2019-09-06T10:18:53.338847 #46022] DEBUG -- :   MESSAGEBOX _create_window h: w:80 r:0 c:0 
+D, [2019-09-06T10:18:53.338863 #46022] DEBUG -- :   MESSAGEBOX _create_window h:10 w:89 
+D, [2019-09-06T10:18:53.338878 #46022] DEBUG -- :   MESSAGEBOX _create_window h:10 w:80 r:0 c:0 
+D, [2019-09-06T10:18:53.338894 #46022] DEBUG -- :   MESSAGEBOX _create_window h:10 w:80 r:7 c:0 
+D, [2019-09-06T10:18:53.338961 #46022] DEBUG -- :  MESSAGE BOX bg: , co: , colorpair:0
+D, [2019-09-06T10:18:53.339875 #46022] DEBUG -- :  form repaint:,  , r 0 c 0 
+D, [2019-09-06T10:18:53.339905 #46022] DEBUG -- : label repaint 4 5 You last weighed: 80 kilos 
+D, [2019-09-06T10:18:53.339967 #46022] DEBUG -- : BUTTON repaint : #<Umbra::Button:0x00007ffd4e3ff720>  r:7 c:32 , cp:, st:NORMAL, [ Ok ]
+D, [2019-09-06T10:18:53.340015 #46022] DEBUG -- : BUTTON repaint : #<Umbra::Button:0x00007ffd4e3fed48>  r:7 c:39 , cp:, st:NORMAL, [ Cancel ]
+D, [2019-09-06T10:18:53.340049 #46022] DEBUG -- :  form repaint:,  , r 7 c 34 
+D, [2019-09-06T10:18:53.340859 #46022] DEBUG -- : BUTTON repaint : #<Umbra::Button:0x00007ffd4e3ff720>  r:7 c:32 , cp:, st:HIGHLIGHTED, [ Ok ]
+D, [2019-09-06T10:18:53.714054 #46022] DEBUG -- : handled inside Form 9 from #<Umbra::Button:0x00007ffd4e3ff720> got UNHANDLED  
+D, [2019-09-06T10:18:53.714149 #46022] DEBUG -- : Form setting state of  to NORMAL
+D, [2019-09-06T10:18:53.714183 #46022] DEBUG -- :  form repaint:,  , r 7 c 41 
+D, [2019-09-06T10:18:53.714212 #46022] DEBUG -- : BUTTON repaint : #<Umbra::Button:0x00007ffd4e3ff720>  r:7 c:32 , cp:, st:NORMAL, [ Ok ]
+D, [2019-09-06T10:18:53.714273 #46022] DEBUG -- : BUTTON repaint : #<Umbra::Button:0x00007ffd4e3fed48>  r:7 c:39 , cp:, st:HIGHLIGHTED, [ Cancel ]
+D, [2019-09-06T10:18:53.714349 #46022] DEBUG -- :  form before repaint  , , ret 0
+D, [2019-09-06T10:18:53.714370 #46022] DEBUG -- :  form repaint:,  , r 7 c 41 
+D, [2019-09-06T10:18:53.993616 #46022] DEBUG -- : inside def fire_handler evt:PRESS, o: Umbra::EventHandler::ActionEvent
+D, [2019-09-06T10:18:53.993691 #46022] DEBUG -- : EVENTHANDLER: #<Umbra::Button:0x00007ffd4e3fed48> called EventHandler firehander , PRESS
+D, [2019-09-06T10:18:53.993726 #46022] DEBUG -- : MESSAGEBOX: CALLING PROGRAM BEING RETURNED: 1 
+D, [2019-09-06T10:18:53.993760 #46022] DEBUG -- : handled inside Form 32 from #<Umbra::Button:0x00007ffd4d846500> got 0  
+D, [2019-09-06T10:18:53.993779 #46022] DEBUG -- :  form before repaint  , , ret 
+D, [2019-09-06T10:18:53.993795 #46022] DEBUG -- :  form repaint:,  , r 9 c 34 
+D, [2019-09-06T10:18:54.591566 #46022] DEBUG -- : inside def fire_handler evt:PRESS, o: Umbra::EventHandler::ActionEvent
+D, [2019-09-06T10:18:54.591657 #46022] DEBUG -- : EVENTHANDLER: #<Umbra::Button:0x00007ffd4d846500> called EventHandler firehander , PRESS
+W, [2019-09-06T10:18:54.592198 #46022]  WARN -- : Window is nil in form.add_widget
+D, [2019-09-06T10:18:54.592246 #46022] DEBUG -- :   MESSAGEBOX _create_window h: w:80 r:0 c:0 
+D, [2019-09-06T10:18:54.592266 #46022] DEBUG -- :   MESSAGEBOX _create_window h:10 w:89 
+D, [2019-09-06T10:18:54.592283 #46022] DEBUG -- :   MESSAGEBOX _create_window h:10 w:80 r:0 c:0 
+D, [2019-09-06T10:18:54.592354 #46022] DEBUG -- :   MESSAGEBOX _create_window h:10 w:80 r:7 c:0 
+D, [2019-09-06T10:18:54.592409 #46022] DEBUG -- :  MESSAGE BOX bg: , co: , colorpair:0
+D, [2019-09-06T10:18:54.592569 #46022] DEBUG -- :  form repaint:,  , r 0 c 0 
+D, [2019-09-06T10:18:54.592594 #46022] DEBUG -- : label repaint 4 5 You last weighed: 80 kilos 
+D, [2019-09-06T10:18:54.592655 #46022] DEBUG -- : BUTTON repaint : #<Umbra::Button:0x00007ffd4e3ee420>  r:7 c:32 , cp:, st:NORMAL, [ Ok ]
+D, [2019-09-06T10:18:54.593905 #46022] DEBUG -- : BUTTON repaint : #<Umbra::Button:0x00007ffd4e3ede08>  r:7 c:39 , cp:, st:NORMAL, [ Cancel ]
+D, [2019-09-06T10:18:54.593966 #46022] DEBUG -- :  form repaint:,  , r 7 c 34 
+D, [2019-09-06T10:18:54.593993 #46022] DEBUG -- : BUTTON repaint : #<Umbra::Button:0x00007ffd4e3ee420>  r:7 c:32 , cp:, st:HIGHLIGHTED, [ Ok ]
+D, [2019-09-06T10:18:55.158536 #46022] DEBUG -- : handled inside Form 9 from #<Umbra::Button:0x00007ffd4e3ee420> got UNHANDLED  
+D, [2019-09-06T10:18:55.158641 #46022] DEBUG -- : Form setting state of  to NORMAL
+D, [2019-09-06T10:18:55.158694 #46022] DEBUG -- :  form repaint:,  , r 7 c 41 
+D, [2019-09-06T10:18:55.158732 #46022] DEBUG -- : BUTTON repaint : #<Umbra::Button:0x00007ffd4e3ee420>  r:7 c:32 , cp:, st:NORMAL, [ Ok ]
+D, [2019-09-06T10:18:55.158805 #46022] DEBUG -- : BUTTON repaint : #<Umbra::Button:0x00007ffd4e3ede08>  r:7 c:39 , cp:, st:HIGHLIGHTED, [ Cancel ]
+D, [2019-09-06T10:18:55.158899 #46022] DEBUG -- :  form before repaint  , , ret 0
+D, [2019-09-06T10:18:55.158932 #46022] DEBUG -- :  form repaint:,  , r 7 c 41 
+D, [2019-09-06T10:18:55.506896 #46022] DEBUG -- : inside def fire_handler evt:PRESS, o: Umbra::EventHandler::ActionEvent
+D, [2019-09-06T10:18:55.507015 #46022] DEBUG -- : EVENTHANDLER: #<Umbra::Button:0x00007ffd4e3ede08> called EventHandler firehander , PRESS
+D, [2019-09-06T10:18:55.507059 #46022] DEBUG -- : MESSAGEBOX: CALLING PROGRAM BEING RETURNED: 1 
+D, [2019-09-06T10:18:55.508547 #46022] DEBUG -- : handled inside Form 32 from #<Umbra::Button:0x00007ffd4d846500> got 0  
+D, [2019-09-06T10:18:55.508597 #46022] DEBUG -- :  form before repaint  , , ret 
+D, [2019-09-06T10:18:55.508619 #46022] DEBUG -- :  form repaint:,  , r 9 c 34 
+D, [2019-09-06T10:18:56.123255 #46022] DEBUG -- : handled inside Form 9 from #<Umbra::Button:0x00007ffd4d846500> got UNHANDLED  
+D, [2019-09-06T10:18:56.123346 #46022] DEBUG -- :  form before repaint  , , ret 
+D, [2019-09-06T10:18:56.123394 #46022] DEBUG -- :  form repaint:,  , r 9 c 34 
+D, [2019-09-06T10:18:57.930105 #46022] DEBUG -- : MESSAGEBOX: CALLING PROGRAM BEING RETURNED:  
+D, [2019-09-06T10:18:57.930946 #46022] DEBUG -- : EVENTHANDLER: #<Umbra::Button:0x00007ffd4e417208> called EventHandler firehander , PRESS
+D, [2019-09-06T10:18:57.931000 #46022] DEBUG -- : handled inside Form 32 from #<Umbra::Button:0x00007ffd4e417208> got 0  
+D, [2019-09-06T10:18:57.931026 #46022] DEBUG -- :  form before repaint  , , ret 
+D, [2019-09-06T10:18:57.931047 #46022] DEBUG -- :  form repaint:,  , r 20 c 19 
